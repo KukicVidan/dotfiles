@@ -44,6 +44,8 @@ require("lazy").setup({
       vim.cmd("colorscheme gruvbox-baby")
     end,
   },
+ -- Hyprland syntax highlighting
+--yet to be find 
 
 })
 
@@ -68,4 +70,5 @@ for i = 1, 9 do
 end
 -- Close the current tab with Space + w
 vim.api.nvim_set_keymap('n', '<Leader>w', ':tabclose<CR>', { noremap = true, silent = true })
+
 
