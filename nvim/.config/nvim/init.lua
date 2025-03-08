@@ -20,8 +20,8 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
-
--- Initialize lazy.nvim
+------------------------------------------
+-- Initialize lazy.nvim--------------------
 require("lazy").setup({
   -- List your plugins here
 
@@ -35,6 +35,7 @@ require("lazy").setup({
       require("nvim-tree").setup()
     end,
   },
+  -----------------------------------------------------------
   -- Color scheme
   {
     "luisiacc/gruvbox-baby",
@@ -44,11 +45,17 @@ require("lazy").setup({
       vim.cmd("colorscheme gruvbox-baby")
     end,
   },
+  ------------------------------------------------------------
  -- Hyprland syntax highlighting
---yet to be find 
+ 
 
+
+
+ --
 })
-
+-------------------------------------------------------------
+-------------------------------------------------------------
+------------------------------------------------------------
 -- Toggle file explorer
 vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
