@@ -73,10 +73,17 @@
 
   typeset -g POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON="%F{cyan}⇣%f"
   typeset -g POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON="%F{yellow}⇡%f"
-  typeset -g POWERLEVEL9K_VCS_STAGED_ICON="%F{blue}%f"
-  typeset -g POWERLEVEL9K_VCS_UNSTAGED_ICON="%F{red}%f"
-  typeset -g POWERLEVEL9K_VCS_DIRTY_ICON="%F{red}%f"
+  typeset -g POWERLEVEL9K_VCS_STAGED_ICON="%F{blue}%f"
+  typeset -g POWERLEVEL9K_VCS_UNSTAGED_ICON="%F{red}%f"
+  #typeset -g POWERLEVEL9K_VCS_DIRTY_ICON="%F{red}%f"
   typeset -g POWERLEVEL9K_VCS_COMMIT_ICON="%F{cyan}%f"
+
+  # Git status display format
+   POWERLEVEL9K_VCS_SHOW_NUMBERS=true
+   POWERLEVEL9K_VCS_ICON_BEFORE_STATUS=true
+   POWERLEVEL9K_VCS_SHOW_STAGED=true
+   POWERLEVEL9K_VCS_SHOW_UNSTAGED=true
+
 
   # Grey current time.
   typeset -g POWERLEVEL9K_TIME_FOREGROUND=$grey
@@ -95,4 +102,6 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 
 (( ${#p10k_config_opts} )) && setopt ${p10k_config_opts[@]}
 'builtin' 'unset' 'p10k_config_opts'
+
+
 

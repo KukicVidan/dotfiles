@@ -35,7 +35,7 @@ require("lazy").setup({
       require("nvim-tree").setup()
     end,
   },
-  -----------------------------------------------------------
+  ----------------------------------------------------------
   -- Color scheme
   {
     "luisiacc/gruvbox-baby",
@@ -45,6 +45,12 @@ require("lazy").setup({
       vim.cmd("colorscheme gruvbox-baby")
     end,
   },
+  ----------------------------------------------------------
+  --Lua Line
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
+},
   ------------------------------------------------------------
  -- Hyprland syntax highlighting
  
@@ -77,5 +83,61 @@ for i = 1, 9 do
 end
 -- Close the current tab with Space + w
 vim.api.nvim_set_keymap('n', '<Leader>w', ':tabclose<CR>', { noremap = true, silent = true })
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+vim.opt.hlsearch = false  -- Disable search highlighting
+vim.api.nvim_create_autocmd("CmdlineEnter", {
+    pattern = "/",
+    command = "set hlsearch",
+})
+vim.api.nvim_create_autocmd("CmdlineLeave", {
+    pattern = "/",
+    command = "set nohlsearch",
+})
 
 
+----------------#######LUALINE CONF#########---------------------------
+require('lualine').setup {
+  options = {
+    icons_enabled = true,
+    theme = 'codedark',
+    component_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''},
+    disabled_filetypes = {
+      statusline = {},
+      winbar = {},
+    },
+    ignore_focus = {},
+    always_divide_middle = true,
+    always_show_tabline = true,
+    globalstatus = false,
+    refresh = {
+      statusline = 100,
+      tabline = 100,
+      winbar = 100,
+    }
+  },
+  sections = {
+    lualine_a = {'mode'},
+    lualine_b = {'branch', 'diff', 'diagnostics'},
+    lualine_c = {{'filename',path =1}},
+    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'}
+  },
+  inactive_sections = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {}
+  },
+  tabline = {},
+  winbar = {},
+  inactive_winbar = {},
+  extensions = {}
+}
+----------------------------#########-------------------------
