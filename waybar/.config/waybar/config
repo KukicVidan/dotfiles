@@ -1,0 +1,51 @@
+{
+    "layer": "top",
+    "position": "top",
+
+    "modules-left":
+    [
+        "hyprland/workspaces",
+    ],
+
+    "modules-right":
+    [
+    "custom/updates",
+    "tray",
+    "network",  
+    ],
+
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "on-click": "activate"
+    },
+
+    "network": {
+    	"interface": "wlan0",
+        "format": "WiFi",
+        "format-disconnected": "WiFi Disconnected",
+        "tooltip": false,
+        "on-click": "nm-connection-editor"
+    },
+
+   
+     "include": [
+        "~/dotfiles/waybar/.config/waybar/modules.json",
+    ],
+
+
+
+    "custom/updates": {
+    "format": "{} {icon}",
+    "return-type": "json",
+    "format-icons": {
+        "has-updates": "󱧘",
+        "updated": "󰏗"
+    },
+
+   
+
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates --no-zero-output"
+ } 
+}
+

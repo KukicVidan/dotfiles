@@ -1,0 +1,66 @@
+window {
+font-size: 20px;	
+font-family: "FireCode Nerd Font";
+margin: 0px;
+border: 1px solid #928374;
+background-color: #282828;
+border-radius: 0px;
+opacity: 0.9;
+
+}
+
+#input {
+margin: 5px;
+border: none;
+color: #ebdbb2;
+background-color: #1d2021;
+border-radius: 0px;
+}
+
+#inner-box {
+margin: 5px;
+border: none;
+background-color: #282828;
+border-radius: 0px;
+box-shadow: none;
+}
+
+#outer-box {
+margin: 5px;
+border: none;
+background-color: #282828;
+border-radius: 0px;
+}
+
+
+#scroll {
+margin: 0px;
+border: none;
+}
+
+#text {
+margin: 5px;
+border: none;
+color: #ebdbb2;
+border-radius:0px;
+}
+
+#entry:selected {
+background-color: #1d2021;
+border-radius: 0px;
+box-shadow: none;
+}
+#img {
+  margin-right: 6px;
+}
+#entry:selected{ 
+border-radius:0px;
+}
+#text:selected{
+box-shadow: none;
+border-radius: 0px;
+}
+#selected {
+box-shadow: none;
+border-radius: 0px;
+}

@@ -1,0 +1,8 @@
+  call plug#begin('~/.local/share/nvim/plugged')
+
+  Plug 'luisiacc/gruvbox-baby', {'branch': 'main'}
+
+  call plug#end()
+
+  colorscheme gruvbox-baby
+

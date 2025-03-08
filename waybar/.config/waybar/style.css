@@ -1,0 +1,36 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 14px;
+    border-radius: 0px;
+}
+
+#waybar {
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+#workspaces button {
+    color: gray;
+    background: transparent;
+    padding: 5px;
+}
+
+#workspaces button.active {
+    color: white;
+    font-weight: bold;
+}
+
+#network {
+    margin-right: 10px;
+    margin-left: 15px
+}
+#custom-updates {
+	background-color: transparent;
+	font-size:20px;
+	margin-right: 25px;
+	margin-left:10px;
+}
+#tray {
+	font-size:21px;
+}
