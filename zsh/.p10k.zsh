@@ -71,9 +71,9 @@
   typeset -g POWERLEVEL9K_VCS_CONFLICTED_FOREGROUND=$red        # Red for conflicts
   typeset -g POWERLEVEL9K_VCS_LOADING_FOREGROUND=$grey          # Grey when loading
 
-  typeset -g POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON="%F{cyan}⇣%f"
-  typeset -g POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON="%F{yellow}⇡%f"
-  typeset -g POWERLEVEL9K_VCS_STAGED_ICON="%F{blue}%f"
+  typeset -g POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON="%F{cyan}%f"
+  typeset -g POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON="%F{green}%f"
+  typeset -g POWERLEVEL9K_VCS_STAGED_ICON="%F{blue}%f"
   typeset -g POWERLEVEL9K_VCS_UNSTAGED_ICON="%F{red}%f"
   #typeset -g POWERLEVEL9K_VCS_DIRTY_ICON="%F{red}%f"
   typeset -g POWERLEVEL9K_VCS_COMMIT_ICON="%F{cyan}%f"
