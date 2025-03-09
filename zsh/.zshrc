@@ -130,3 +130,5 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ -f /home/vidan/.dart-cli-completion/zsh-config.zsh ]] && . /home/vidan/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+
+export PATH=$PATH:/home/vidan/.spicetify

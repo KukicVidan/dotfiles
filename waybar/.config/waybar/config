@@ -6,12 +6,20 @@
     [
         "hyprland/workspaces",
     ],
+    
+    "modules-center":
+    [
+	
+       
+
+    ],
 
     "modules-right":
     [
     "custom/updates",
     "tray",
-    "network",  
+    "network",
+    
     ],
 
     "hyprland/workspaces": {
