@@ -12,7 +12,7 @@
     padding = 8
     horizontal_padding = 8
     text_icon_padding = 0
-    frame_width = 2
+    frame_width = 0
 
     frame_color = "#EBDBB2"
     separator_color = frame

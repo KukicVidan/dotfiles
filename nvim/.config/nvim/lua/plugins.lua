@@ -58,17 +58,27 @@ require("lazy").setup({
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
-
-    --indentation
     {
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    ---@module "ibl"
-    ---@type ibl.config
-    opts = {},
-    },
-
-    --Formatting and Autocompletion
+    "tpope/vim-commentary",
+  },
+  --terminal
+   {'akinsho/toggleterm.nvim', version = "*", opts = {
+    open_mapping = [[`]],             -- Set backtick (`) to toggle the terminal
+    direction = "horizontal",        -- Set the terminal at the bottom
+    shell = "/bin/zsh",              -- Set the terminal to use Zsh
+    size = 20,                       -- Set terminal size (can adjust as needed)
+    persist_mode = true,             -- Keep terminal open when focus changes
+  }}
+    --indentation
+ --    {
+ --    "lukas-reineke/indent-blankline.nvim",
+ --    main = "ibl",
+ --    ---@module "ibl"
+ --    ---@type ibl.config
+ --    opts = {},
+ --    },
+ --
+ --    --Formatting and Autocompletion
     
 })
 
