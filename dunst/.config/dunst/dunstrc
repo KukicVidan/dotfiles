@@ -50,11 +50,11 @@
     timeout = 7
 
 [urgency_low]
-    background = "#282828EB"
+    background = "#16130b"
     foreground = "#EBDBB2"
 
 [urgency_normal]
-    background = "#282828EB"
+    background = "#16130b"
     foreground = "#EBDBB2"
 
 [urgency_critical]
