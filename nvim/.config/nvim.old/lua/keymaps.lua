@@ -22,4 +22,3 @@ vim.api.nvim_set_keymap('n', 'c', '', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>p', '"+p', { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>", { noremap = true, silent = true })

@@ -118,7 +118,11 @@ source $ZSH/oh-my-zsh.sh
  alias pdf='zathura'
  alias reloadWaybar='killall waybar
 waybar & disown' 
- alias camera='guvcview --gui=none --render_window=1280x720 --device=/dev/video0'
+
+
+alias hint="bat --color=always --style=plain --paging=never ~/dotfiles/HINTS/hints.md"
+alias fzf="fzf --preview "bat --color=always --style=numbers --line-range=:500 {}""
+alias camera='guvcview --gui=none --render_window=1280x720 --device=/dev/video0'
 # Adding path for my plugins installed from pacman
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
