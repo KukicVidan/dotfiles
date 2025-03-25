@@ -117,7 +117,8 @@ source $ZSH/oh-my-zsh.sh
  alias goodnight='hyprctl dispatch exit'
  alias pdf='zathura'
  alias reloadWaybar='killall waybar
-waybar & disown'
+waybar & disown' 
+ alias camera='guvcview --gui=none --render_window=1280x720 --device=/dev/video0'
 # Adding path for my plugins installed from pacman
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

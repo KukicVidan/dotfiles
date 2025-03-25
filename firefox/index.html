@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html onclick="setFocusToTextBox()">
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
+
+		:root {
+			--main-bg-color: #16130b;
+			--box-bg-color: #212224;
+			--box-shadow-color: #323842;
+			--primary-color: #d4d8df;
+			--secondary-color: #abb2bf;
+
+			--first-color: #e06c75;
+			--second-color: #c678dd;
+			--third-color: #98c379;
+			--fourth-color: #61afef;
+			--fifth-color: #e5c07b;
+
+			--grid-column-count: 5;
+		}
+
+		* {
+			cursor: default;
+		}
+
+		*::selection {
+			color: var(--main-bg-color);
+			background-color: var(--primary-color);
+		}
+
+		html {
+			align-items: center;
+			background-color: var(--main-bg-color);
+			display: flex;
+			font-size: 25px;
+			line-height: 1.10;
+			font-family: "Liberation Mono Font", "FiraCode Nerd Font", monospace;
+			font-weight: 400;
+			min-height: 100%;
+			justify-content: center;
+		}
+
+		body {
+			background-color: var(--box-bg-color);
+			box-shadow: 0 0 3px 0 var(--box-shadow-color);
+			color: var(--primary-color);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			min-height: 60vh;
+			min-width: 60vw;
+			padding: 2em;
+			border-radius: 15px;
+			user-select: none;
+			position: relative;
+		}
+
+		input,
+		input:hover,
+		input:focus,
+		input:active {
+			background: transparent;
+			border: 0;
+			border-style: none;
+			border-color: transparent;
+			outline: none;
+			outline-offset: 0;
+			box-shadow: none;
+			caret: var(--secondary-color) block;
+			color: var(--primary-color);
+			height: 2ch;
+			font-size: inherit;
+			line-height: 1.10;
+			font-family: "Liberation Mono Font", "FiraCode Nerd Font", monospace;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		p span {
+			color: var(--secondary-color);
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		a:focus,
+		a:hover {
+			font-weight: 400;
+			color: #e5c07b;
+		}
+
+		a::before {
+			content: "> ";
+			color: var(--secondary-color);
+			font-weight: 400;
+		}
+		
+		a:hover::before {
+			color: var(--primary-color);
+		}
+		
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav {
+			column-gap: 2em;
+			display: grid;
+			grid-template-columns: repeat(var(--grid-column-count), auto);
+			padding: 1em 0;
+		}
+
+		ul:nth-child(5n + 1) li:first-child {
+			color: var(--first-color);
+		}
+
+		ul:nth-child(5n + 2) li:first-child {
+			color: var(--second-color);
+		}
+
+		ul:nth-child(5n + 3) li:first-child {
+			color: var(--third-color);
+		}
+
+		ul:nth-child(5n + 4) li:first-child {
+			color: var(--fourth-color);
+		}
+
+		ul:nth-child(5n + 5) li:first-child {
+			color: var(--fifth-color);
+		}
+
+		li:first-child {
+			font-weight: 700;
+			margin: 0 0 0.5em;
+		}
+
+		li:last-child {
+			margin: 0 0 1em;
+		}
+
+		.action-buttons {
+			display: flex;
+			flex-direction: row-reverse;
+			gap: 6px;
+			position: absolute;
+			top: 12px;
+			right: 12px;
+		}
+
+		.ext, .max, .min {
+			border-radius: 50%;
+			width: 18px;
+			height: 18px;
+			color: var(--main-bg-color);
+			font-size: 18px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.ext:hover, .max:hover, .min:hover {
+			filter: brightness(0.8);
+		}
+
+		.action-buttons .ext {
+			background-color: var(--first-color);
+		}
+
+		.action-buttons .max {
+			background-color: var(--third-color);
+		}
+
+		.action-buttons .min {
+			background-color: var(--fifth-color);
+		}
+
+		/* ----- MEDIA QUERIES ----- */
+
+		@media (max-width: 71.375em) {
+			html {
+				font-size: 16px;
+			}
+		}
+
+		@media (max-width: 59.75em) {
+			input {
+				width: 70%;
+			}
+		}
+
+		@media (max-width: 55.625em) {
+			html {
+				font-size: 14px;
+			}
+		}
+
+		@media (max-width: 49em) {
+			body {
+				padding: 1em;
+			}
+		}
+
+		@media (max-width: 44.375em) {
+			html {
+				font-size: 12px;
+			}
+		}
+	</style>
+	<head>
+		<title>NewTab</title>
+		<link rel="icon" type="image/svg" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%2398c379%22%20class%3D%22w-6%20h-6%22%3E%20%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M9%204.5a.75.75%200%2001.721.544l.813%202.846a3.75%203.75%200%20002.576%202.576l2.846.813a.75.75%200%20010%201.442l-2.846.813a3.75%203.75%200%2000-2.576%202.576l-.813%202.846a.75.75%200%2001-1.442%200l-.813-2.846a3.75%203.75%200%2000-2.576-2.576l-2.846-.813a.75.75%200%20010-1.442l2.846-.813A3.75%203.75%200%20007.466%207.89l.813-2.846A.75.75%200%20019%204.5zM18%201.5a.75.75%200%2001.728.568l.258%201.036c.236.94.97%201.674%201.91%201.91l1.036.258a.75.75%200%20010%201.456l-1.036.258c-.94.236-1.674.97-1.91%201.91l-.258%201.036a.75.75%200%2001-1.456%200l-.258-1.036a2.625%202.625%200%2000-1.91-1.91l-1.036-.258a.75.75%200%20010-1.456l1.036-.258a2.625%202.625%200%20001.91-1.91l.258-1.036A.75.75%200%200118%201.5zM16.5%2015a.75.75%200%2001.712.513l.394%201.183c.15.447.5.799.948.948l1.183.395a.75.75%200%20010%201.422l-1.183.395c-.447.15-.799.5-.948.948l-.395%201.183a.75.75%200%2001-1.422%200l-.395-1.183a1.5%201.5%200%2000-.948-.948l-1.183-.395a.75.75%200%20010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75%200%200116.5%2015z%22%20clip-rule%3D%22evenodd%22%20%2F%3E%20%3C%2Fsvg%3E">
+		<script>
+			function setFocusToTextBox() {
+				document.getElementById("input").focus();
+			}
+			document.onload(setFocusToTextBox());
+		</script>
+		<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+
+
+
+	</head>
+
+	<body onload="setFocusToTextBox()" onclick="setFocusToTextBox()">
+		<div class="action-buttons">
+			<span class="ext">&times;</span>
+			<span class="max">&plus;</span>
+			<span class="min">&minus;</span>
+		</div>
+		<p><span>vidan 󰣇 Linux &dollar; </span>newtab <span>--ls</span></p>
+
+		<nav>
+			<ul>
+				<li>Apps</li>
+				<li><a href="https://mail.google.com/">󰊫 Gmail</a></li>
+				<li><a href="https://drive.google.com/"> Drive</a></li>
+
+				<li><a href="https://artvee.com/c/landscape/page/3/"> Wallpepers</a></li>
+			</ul>
+
+			<ul>
+				<li>Development</li>
+				<li><a href="https://github.com"> Github</a></li>
+				<li><a href="https://cheat.sh/">cheat.sh</a></li>
+				<li><a href="https://chatgpt.com">󰧑 ChatGPT</a></li>
+			</ul>
+
+			
+
+			<ul>
+				<li>Docs</li>
+				<li><a href="https://wiki.archlinux.org/title/Main_page">󰣇 ArchWiki</a></li>
+				<li><a href="https://beej.us/guide/bgc/html/split/inadex.html"> Learn C</a></li>
+			</ul>
+
+			<ul>
+				<li>Social</li>
+				<li><a href="https://linkedin.com/">󰌻 LinkedIn</a></li>
+				<li><a href="https://reddit.com/">󰑍 Reddit</a></li>
+				
+					<li><a href="https://www.youtube.com/feed/subscriptions/"> YouTube</a></li>
+			</ul>
+
+			<ul>
+				<li>Custom</li>
+				<li><a href="http://localhost:3000">localhost:3000</a></li>
+				<li><a href="http://localhost:8000">localhost:8000</a></li>
+				<li><a href="http://localhost:27017">localhost:27017</a></li>	
+				<li><a href="http://localhost:8082">localhost:8082</a></li>
+			</ul> 
+
+		</nav>
+
+		<form action="http://www.duckduckgo.com/" method="get">
+			<p onclick="setFocusToTextBox()">
+				<span>ali&commat;XD &dollar; </span>newtab<span> --ddg -q</span>
+				<input
+					type="text"
+					name="q"
+					size="60"
+					id="input"
+					autocomplete="off"
+					spellcheck="false"
+				/>
+			</p>
+		</form>
+
+	</body>
+</html>
