@@ -1,47 +1,69 @@
 {
-    "layer": "top",
-    "position": "top",
+"include": "~/dotfiles/waybar/.config/waybar/modules.json",
+"layer": "top",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 6,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 0,
+"margin-left": 0,
+"margin-right": 0,
 
-    "modules-left":
-    [
-        "hyprland/workspaces",
-    ],
-    
-    "modules-center":
-    [
+
+"modules-left": [
 	
-       
+	
+	//"hyprland/workspaces#pacman",
+	"hyprland/workspaces#rw",
+	"custom/separator#dot-line",
+	"custom/separator#blank_3",
+	
+	
+	"hyprland/window",
+	
 
-    ],
-
-    "modules-right":
-    [
-    "custom/updates",
-    "tray",
-    "network",
-    
-    ],
-
-    "hyprland/workspaces": {
-        "format": "{id}",
-        "on-click": "activate"
+	
+        
+	
+	],
+//"modules-center": [
+	
+	//"custom/cava_mviz",
+//	"custom/separator#dot-line",
+	
+	
+//	],
+	"clock": {
+        "format": "{:%H:%M}",
     },
+"modules-right": [
 
-    "network": {
-    	"interface": "wlan0",
-        "format": "WiFi",
-        "format-disconnected": "WiFi Disconnected",
-        "tooltip": false,
-        "on-click": "nm-connection-editor"
-    },
-
-   
-     "include": [
-        "~/dotfiles/waybar/.config/waybar/modules.json",
-    ],
+	//"custom/cava_mviz",
+	"custom/playerctl",
+	"custom/separator#dot-line",
+	"custom/updates",
+	"tray",
+	//"custom/separator#dot-line",
+	//"group/motherboard",
 
 
+	"custom/separator#dot-line",
+	//"group/laptop",
+	
+	//"network",
+	"custom/separator#blank_2",
 
+	
+
+	"clock",
+	"custom/separator#blank_3"
+	
+	
+	],
+	
     "custom/updates": {
     "format": "{} {icon}",
     "return-type": "json",
@@ -49,11 +71,7 @@
         "has-updates": "󱧘",
         "updated": "󰏗"
     },
-
-   
-
-    "exec-if": "which waybar-module-pacman-updates",
+ "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"
- } 
 }
-
+}

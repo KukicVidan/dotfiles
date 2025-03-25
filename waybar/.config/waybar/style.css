@@ -5,8 +5,8 @@
 }
 
 #waybar {
-    background: transparent;
-    color: white;
+    background: #16130b;
+    color: #eae1d4;
     border: none;
 }
 
@@ -19,6 +19,7 @@
 #workspaces button.active {
     color: white;
     font-weight: bold;
+    background: #1a361e;
 }
 
 #network {
@@ -33,4 +34,5 @@
 }
 #tray {
 	font-size:21px;
+	color: #eae1d4;
 }
