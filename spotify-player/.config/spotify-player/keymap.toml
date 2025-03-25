@@ -1,0 +1,21 @@
+
+[[keymaps]]
+command="None"
+key_sequence="l"
+
+[[keymaps]]
+command = "LikedTrackPage"
+key_sequence = "C-l"
+
+[[actions]]
+action="AddToLiked"
+key_sequence="l"
+
+[[actions]]
+action="DeleteFromLiked"
+key_sequence="L"
+
+[[actions]]
+action="GoToArtist"
+key_sequence="C-a"
+
