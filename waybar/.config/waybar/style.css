@@ -31,8 +31,18 @@
 	font-size:20px;
 	margin-right: 25px;
 	margin-left:10px;
+	color: #B16286;
 }
 #tray {
 	font-size:21px;
 	color: #eae1d4;
+}
+
+#custom-logo{
+	color:#458588;
+        background-color:  #16130b;
+}
+
+#custom-playerctl{
+	color: #689D6A;
 }

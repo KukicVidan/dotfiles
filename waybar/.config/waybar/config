@@ -15,7 +15,7 @@
 
 "modules-left": [
 	
-	
+	"custom/logo",
 	//"hyprland/workspaces#pacman",
 	"hyprland/workspaces#rw",
 	"custom/separator#dot-line",
@@ -41,7 +41,7 @@
     },
 "modules-right": [
 
-	//"custom/cava_mviz",
+	
 	"custom/playerctl",
 	"custom/separator#dot-line",
 	"custom/updates",

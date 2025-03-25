@@ -730,6 +730,13 @@
 	"on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
 	"smooth-scrolling-threshold": 1,
 },
+
+"custom/logo": {
+  "exec": "echo ' 󰣇 '",
+  "interval": 0,
+  "format": "{}"
+},
+
 "custom/power": {
 	"format": "⏻ ",
 	"on-click": "~/.config/hypr/scripts/Wlogout.sh",
