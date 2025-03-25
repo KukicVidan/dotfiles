@@ -1,131 +1,124 @@
-// vim: fdm=marker
 
-configuration {
-  modes: "window,drun,run,ssh";
-  font: "FiraCode Nerd Font 18";
-  drun-display-format: "{name}";
-}
+/* ==========================================================================
+   Rofi color theme
+
+   Based on the Gruvbox color scheme for Vim by morhetz
+   https://github.com/morhetz/gruvbox
+
+   File: gruvbox-dark.rasi
+   Desc: Gruvbox dark color theme for Rofi
+   Author: bardisty <b@bah.im>
+   Source: https://github.com/bardisty/gruvbox-rofi
+   Modified: Mon Feb 12 2018 04:08:43 PST -0800
+   ========================================================================== */
 
 * {
-  // general
-  bg: #282828;
-  bgt: #28282895;
-  t: transparent;
-  fg: #d4be98;
+    /* Theme settings */
+    highlight: bold italic;
+    scrollbar: true;
 
-  selected-bg: @fg;
-  selected-fg: @bg;
+    /* Gruvbox dark colors */
+    gruvbox-dark-bg0:          #16130b;
+    gruvbox-dark-bg0-soft:     #16130b;
+    gruvbox-dark-bg3:          #665c54;
+    gruvbox-dark-fg0:          #fbf1c7;
+    gruvbox-dark-fg1:          #ebdbb2;
+    gruvbox-dark-red-dark:     #cc241d;
+    gruvbox-dark-red-light:    #fb4934;
+    gruvbox-dark-yellow-dark:  #d79921;
+    gruvbox-dark-yellow-light: #fabd2f;
+    gruvbox-dark-gray:         #a89984;
 
-  // for windows
-  active: #a9b665;
-  urgent: #fb4934;
+    /* Theme colors */
+    background:                  @gruvbox-dark-bg0;
+    background-color:            @background;
+    foreground:                  @gruvbox-dark-fg1;
+    border-color:                @gruvbox-dark-gray;
+    separatorcolor:              @border-color;
+    scrollbar-handle:            @border-color;
+
+    normal-background:           @background;
+    normal-foreground:           @foreground;
+    alternate-normal-background: @gruvbox-dark-bg0-soft;
+    alternate-normal-foreground: @foreground;
+    selected-normal-background:  @gruvbox-dark-bg3;
+    selected-normal-foreground:  @gruvbox-dark-fg0;
+
+    active-background:           @gruvbox-dark-yellow-dark;
+    active-foreground:           @background;
+    alternate-active-background: @active-background;
+    alternate-active-foreground: @active-foreground;
+    selected-active-background:  @gruvbox-dark-yellow-light;
+    selected-active-foreground:  @active-foreground;
+
+    urgent-background:           @gruvbox-dark-red-dark;
+    urgent-foreground:           @background;
+    alternate-urgent-background: @urgent-background;
+    alternate-urgent-foreground: @urgent-foreground;
+    selected-urgent-background:  @gruvbox-dark-red-light;
+    selected-urgent-foreground:  @urgent-foreground;
 }
 
+/* ---- Window ---- */
 window {
-  fullscreen: true;
-  padding: 35% 30%;       // you might want to ajust these to resize rofi.
-  transparency: "real";
-  background-color: @bgt;
-  border-color: @t;
+    width:	15%;
+    scroll-method:			0;
+    border:           0;
+    padding: 1px;
 }
 
 listview {
-  border: 0 0 0 0;
-  padding: 23 0 0;
-  scrollbar: true;
+    lines:                         7;
+    columns:                        1;
+}
+listview {
+    fixed-height: 0;
+    border:       0px 0px 0px ; /* ----ako zelim border i ispod koje boje da bude.----- */
+    border-color: @gruvbox-dark-fg0;
+    spacing:      0px ; /*--spacing izmedju itema u listi--*/
+    scrollbar:    false;
+    padding:      0px 0px 0px ;
 }
 
-scrollbar {
-    width:        4px;
-    border:       0;
-    handle-color: @fg;
-    handle-width: 8px;
-    padding:      0 5;
+element-text {
+  font: "Fira Code  12";
+  
 }
 
-entry {
-    placeholder: "";
-}
-
-// less interesting stuff {{{
-
-// using elements from:
-// https://github.com/bardisty/gruvbox-rofi/blob/master/gruvbox-common.rasi
-
-textbox {
-    text-color: @fg;
-}
-
-element {
-    border:  0;
-    padding: 2px;
-}
-element.normal.normal {
-    background-color: @t;
-    text-color:       @fg;
-}
-element.normal.urgent {
-    background-color: @t;
-    text-color:       @urgent;
-}
-element.normal.active {
-    background-color: @t;
-    text-color:       @active;
-}
-element.selected.normal {
-    background-color: @selected-bg;
-    text-color:       @selected-fg;
-}
-element.selected.urgent {
-    background-color: @selected-bg;
-    text-color:       @urgent;
-}
-element.selected.active {
-    background-color: @selected-bg;
-    text-color:       @selected-fg;
-}
-element.alternate.normal {
-    background-color: @t;
-    text-color:       @fg;
-}
-element.alternate.urgent {
-    background-color: @t;
-    text-color:       @urgent;
-}
-element.alternate.active {
-    background-color: @t;
-    text-color:       @active;
-}
-
-sidebar {
-    border:       2px 0 0;
-    border-color: @fg;
-}
-
+/* ---- Input Bar ---- */
 inputbar {
-    spacing:    0;
-    text-color: @fg;
-    padding:    2px;
-    children:   [ prompt, textbox-prompt-sep, entry, case-indicator ];
+    padding: 0px;
+    border: 0px;
+    prompt: ""; /* Removes 'drun:' */
+    placeholder: '';
+    children:[textbox-prompt-colon,entry,case-indicator];
+    background-color:   #16130b;
+
+    
+}
+element-text{
+    /* ---- Ovde sicam background color---*/
+
+}
+entry {
+    placeholder: ""; /* Removes 'Type to filter' */
+    background-color: #16130b;
+    padding: 0px;
+    margin: 0px;
 }
 
-case-indicator,
-entry,
-prompt,
-button {
-    spacing:    0;
-    text-color: @fg;
-}
 
-button.selected {
-    background-color: @bg;
-    text-color:       @fg;
-}
+configuration {
+      display-drun: "";
+      
+  }
 
-textbox-prompt-sep {
-    expand:     false;
-    str:        ":";
-    text-color: @fg;
-    margin:     0 0.3em 0 0;
-}
-// }}}
+  textbox-prompt-colon{
+    expand: false;
+    str:'';
+    
+    
+  }
+
+  
+
