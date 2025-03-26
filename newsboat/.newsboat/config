@@ -43,9 +43,13 @@ highlight feedlist "╠═.*" blue default bold
 highlight feedlist "\\(YouTube\\) .*" red
 
 
-highlight feedlist "\\(Cozy\\) .*" green
+highlight feedlist "\\(Cozy\\) .*" yellow
 highlight feedlist "\\(Arch\\) .*" magenta
 highlight feedlist "\\(News\\) .*" cyan
+highlight feedlist "\\(Farm\\) .*" green
+highlight feedlist "\\(NerdShit\\) .*"  green
+highlight feedlist "\\(Poet\\) .*"  red
+
 
 
 
