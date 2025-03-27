@@ -44,6 +44,7 @@
 	
 	"custom/playerctl",
 	"custom/separator#dot-line",
+	"group/mobo_drawer",
 	"custom/updates",
 	"tray",
 	//"custom/separator#dot-line",
