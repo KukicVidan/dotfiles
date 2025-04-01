@@ -44,12 +44,14 @@
 	
 	//"mpris",
 	"custom/playerctl",
+
 	"custom/separator#dot-line",
+
 	
 	"group/mobo_drawer",
-	"custom/separator#dot-line",
-	"custom/updates",
+
 	"tray",
+	"custom/updates",
 	//"custom/separator#dot-line",
 	//"group/motherboard",
 

@@ -41,13 +41,14 @@
 #custom-logo{
 	color:#458588;
         
-	background-color: #0A0602;
+	
 	font-size: 25px;
 	padding-right: 7px;
 }
 
 #custom-playerctl{
-	color: #689D6A;
+	color: #C4AD76;
+	font-size: 15px;
 }
 #mpris{
 	color: #689D6A;
