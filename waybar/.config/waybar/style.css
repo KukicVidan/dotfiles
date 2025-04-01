@@ -1,6 +1,6 @@
 * {
     font-family: "Liberation Mono Font", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 0px;
 }
 
@@ -14,11 +14,13 @@
     color: gray;
     background: transparent;
     padding: 5px;
+    
+    
 }
 
 #workspaces button.active {
     color: white;
-    font-weight: bold;
+    
     background: #1a361e;
 }
 
@@ -29,8 +31,8 @@
 #custom-updates {
 	background-color: transparent;
 	font-size:17px;
-	margin-right: 10px;
-	margin-left:10px;
+	margin-right: 3px;
+	margin-left:3px;
 	color: #B16286;
 }
 #tray {
@@ -55,12 +57,13 @@
 
 }
 #clock {
-padding-right: 10px;
-padding-left: 10px;
 font-size: 17px;
 }
 
 #temperature {
 font-size: 15px;
+margin-left: 3px;
 }
+
+
 

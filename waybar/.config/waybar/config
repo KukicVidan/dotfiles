@@ -48,9 +48,9 @@
 	"custom/separator#dot-line",
 
 	
-	"group/mobo_drawer",
-
 	"tray",
+	"temperature",
+
 	"custom/updates",
 	//"custom/separator#dot-line",
 	//"group/motherboard",
