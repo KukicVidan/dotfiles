@@ -42,14 +42,16 @@
 "modules-right": [
 
 	
+	//"mpris",
 	"custom/playerctl",
 	"custom/separator#dot-line",
+	
 	"group/mobo_drawer",
+	"custom/separator#dot-line",
 	"custom/updates",
 	"tray",
 	//"custom/separator#dot-line",
 	//"group/motherboard",
-
 
 	"custom/separator#dot-line",
 	//"group/laptop",
@@ -66,11 +68,11 @@
 	],
 	
     "custom/updates": {
-    "format": "{} {icon}",
+    "format": "{}{icon}",
     "return-type": "json",
     "format-icons": {
-        "has-updates": "󱧘",
-        "updated": "󰏗"
+        "has-updates": "📦",
+        "updated": "📦"
     },
  "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"

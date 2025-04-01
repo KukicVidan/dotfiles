@@ -26,9 +26,9 @@
 	//"thermal-zone": 0,
 	"critical-threshold": 82,
 	"format-critical": "{temperatureC}°C {icon}",
-	"format": "{temperatureC}°C {icon}",
+	"format": "{temperatureC}°C {icon} ",
 	"format-icons": [
-		"󰈸"
+		"🌡"
 	],
 	"on-click-right": "kitty --title nvtop sh -c 'nvtop'"
 },
@@ -391,7 +391,7 @@
 	"interval": 1,
     //"format": " {:%I:%M %p}", // AM PM format
     "format": " {:%H:%M:%S}", // 24H
-	"format-alt": "  {:%H:%M    %d %B, %A}",
+	"format-alt": "🕰 {:%H:%M  📅  %d %B, %A}",
 	"tooltip-format": "<tt><small>{calendar}</small></tt>",
 	"calendar": {
 		"mode": "year",
@@ -438,11 +438,11 @@
 	"format-alt": "{:%A, %d %B, %Y (%R)}"
 },
 "cpu": {
-	"format": "{usage}% 󰍛",
+	"format": "{usage}% 󰍛 ",
 	"interval": 1,
 	"min-length": 5,
 	"format-alt-click": "click",
-	"format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
+	"format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛  ",
 	"format-icons": [
 		"▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"
 	],
@@ -453,7 +453,7 @@
 	//"format": "󰋊",
 	"path": "/",
 	//"format-alt-click": "click",
-	"format": "{percentage_used}% 󰋊",
+	"format": "{percentage_used}% 󰋊 ",
 	//"tooltip": true,
 	"tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
 },
@@ -504,7 +504,7 @@
 },
 "memory": {
 	"interval": 10,
-	"format": "{used:0.1f}G 󰾆 ",
+	"format": "{used:0.1f}G 󰾆  ",
 	"format-alt": "{percentage}% 󰾆 ",
 	"format-alt-click": "click",
 	"tooltip": true,
@@ -718,7 +718,7 @@
 	"format": "{}"
 },
 "custom/playerctl": {
-	"format": "<span>  {}</span>",
+	"format": "🎙 <span>  {}</span>",
 	"return-type": "json",
 	"max-length": 35,
 	"exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} ~ {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
@@ -912,3 +912,24 @@
     "on-click": "networkmanager_dmenu",
     "on-click-right": "$TERMINAL -a floatterm -e nethogs"
   },
+
+//NEW ONES
+
+"wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 14,
+    "icon-theme": "Gruvbox Plus Dark",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+       "Alacritty"
+    ],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    },
+    "rewrite": {
+        "Firefox Web Browser": "Firefox",
+        "Foot Server": "Terminal"
+    }
+},

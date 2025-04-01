@@ -28,8 +28,8 @@
 }
 #custom-updates {
 	background-color: transparent;
-	font-size:20px;
-	margin-right: 25px;
+	font-size:17px;
+	margin-right: 10px;
 	margin-left:10px;
 	color: #B16286;
 }
@@ -45,4 +45,8 @@
 
 #custom-playerctl{
 	color: #689D6A;
+}
+#mpris{
+	color: #689D6A;
+
 }
