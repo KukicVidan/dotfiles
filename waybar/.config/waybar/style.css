@@ -1,5 +1,5 @@
 * {
-    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-family: "Liberation Mono Font", sans-serif;
     font-size: 14px;
     border-radius: 0px;
 }
@@ -40,7 +40,10 @@
 
 #custom-logo{
 	color:#458588;
-        background-color:  #16130b;
+        
+	background-color: #0A0602;
+	font-size: 25px;
+	padding-right: 7px;
 }
 
 #custom-playerctl{
@@ -50,3 +53,13 @@
 	color: #689D6A;
 
 }
+#clock {
+padding-right: 10px;
+padding-left: 10px;
+font-size: 17px;
+}
+
+#temperature {
+font-size: 15px;
+}
+
