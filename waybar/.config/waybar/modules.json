@@ -16,22 +16,23 @@
 	"exec-if": "ping wttr.in -c1",
 	"tooltip": true,
 },
+
 "temperature": {
-	"interval": 10,
-	"tooltip": true,
-	"hwmon-path": [
-		"/sys/class/hwmon/hwmon1/temp1_input",
-		"/sys/class/thermal/thermal_zone0/temp"
-	],
-	//"thermal-zone": 0,
-	"critical-threshold": 82,
-	"format-critical": "{temperatureC}°C {icon}",
-	"format": "{temperatureC}°C {icon} ",
-	"format-icons": [
-		""
-	],
-	"on-click-right": "kitty --title nvtop sh -c 'nvtop'"
+    "interval": 10,
+    "tooltip": true,
+    "hwmon-path": [
+        "/sys/class/hwmon/hwmon0/temp1_input",  // k10temp (procesor)
+        "/sys/class/hwmon/hwmon0/temp2_input"   // NVMe (ako postoji)
+    ],
+    "critical-threshold": 82,
+    "format-critical": "{temperatureC}°C {icon}",
+    "format": "🌡{temperatureC}°C",
+    "format-icons": [
+        "󰈸"
+    ],
+    "on-click-right": "kitty --title nvtop sh -c 'nvtop'"
 },
+
 "temperature#vertical": {
 	"interval": 10,
 	"tooltip": true,
