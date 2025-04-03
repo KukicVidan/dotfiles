@@ -454,14 +454,14 @@
 	//"format": "󰋊",
 	"path": "/",
 	//"format-alt-click": "click",
-	"format": "{percentage_used}% 󰋊 ",
+	"format": "💾 {used}",
 	//"tooltip": true,
 	"tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
 },
 "hyprland/language": {
 	"format": "Lang: {}",
 	"format-en": "US",
-	"format-tr": "Korea",
+	"format-rs": "СРБ",
 	
 	
 	"keyboard-name": "at-translated-set-2-keyboard",
@@ -478,7 +478,7 @@
 	"offscreen-css": true,
 	"offscreen-css-text": "(inactive)",
 	"rewrite": {
-		"(.*) — Mozilla Firefox": "  $1",
+		"(.*) — Mozilla Firefox": "🦊 $1",
 		"(.*) - fish": "> [$1]",
 		"(.*) - zsh": "> [$1]",
 		"(.*) - $term": "> [$1]",
@@ -684,12 +684,13 @@
 	"tooltip": true,
 	"tooltip-format": "󱧣 Quick Tips",
 },
+
 "custom/keyboard": {
-	"exec": "cat ~/.cache/kb_layout",
-	"interval": 1,
-	"format": " {}",
-	"on-click": "~/.config/hypr/scripts/SwitchKeyboardLayout.sh",
+    "exec": "setxkbmap -query | grep layout | awk '{print $2}'",
+    "interval": 1,
+    "format": " {}",
 },
+
 "custom/light_dark": {
 	"format": "󰔎",
 	"on-click": "~/.config/hypr/scripts/DarkLight.sh",
@@ -719,7 +720,7 @@
 	"format": "{}"
 },
 "custom/playerctl": {
-	"format": "🎙 <span>  {}</span>",
+	"format": "📻<span>  {}</span>",
 	"return-type": "json",
 	"max-length": 35,
 	"exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} ~ {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
@@ -934,3 +935,11 @@
         "Foot Server": "Terminal"
     }
 },
+
+"custom/kkeyboard": {
+    "format": "{layout}",
+    "exec": "setxkbmap -query | grep layout | awk '{print $2}'",
+    "interval": 1,
+    "on-click": "hyprctl keywordlayout toggle"
+},
+

@@ -46,11 +46,11 @@
 	"custom/playerctl",
 
 	"custom/separator#dot-line",
-
 	
+	"disk",
 	"tray",
 	"temperature",
-
+	"",
 	"custom/updates",
 	//"custom/separator#dot-line",
 	//"group/motherboard",
