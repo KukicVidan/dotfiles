@@ -9,3 +9,5 @@
 # Nvim:
 
 >`s/SelectWhatToChange/ChangingSelectedInto?/g` ---> Will replace selected word
+
+>`v + gc` ---> Comment multiple lines 

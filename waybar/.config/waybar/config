@@ -4,7 +4,7 @@
 //"mode": "dock",
 "exclusive": true,
 "passthrough": false,
-"position": "top",
+"position": "bottom",
 "spacing": 6,
 "fixed-center": true,
 "ipc": true,

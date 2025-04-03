@@ -27,6 +27,9 @@ require("lazy").setup({
 	{
 		"luisiacc/gruvbox-baby",
 		config = function()
+			vim.g.gruvbox_baby_color_overrides = {
+				background = "#070603", -- Replace with your desired HEX color
+			}
 			vim.g.gruvbox_baby_background_color = "dark"
 			vim.cmd("colorscheme gruvbox-baby")
 		end,
@@ -74,13 +77,13 @@ require("lazy").setup({
 		},
 	},
 	--indentation
-	--    {
-	--	    "lukas-reineke/indent-blankline.nvim",
-	--	    main = "ibl",
-	--	    ---@module "ibl"
-	--	    ---@type ibl.config
-	--	    opts = {},
-	--	    },
+	--{
+	--	"lukas-reineke/indent-blankline.nvim",
+	--	main = "ibl",
+	--	---@module "ibl"
+	--	---@type ibl.config
+	--	opts = {},
+	--},
 
 	--Formatting and Autocompletion--
 	--autocompletion
@@ -171,33 +174,33 @@ require("lazy").setup({
 	},
 
 
--- SMOOTH SCROOLING --
+	-- SMOOTH SCROOLING --
 
-{
-  "karb94/neoscroll.nvim",
-  opts = {
-    mappings = {}, -- Disable default mappings
-  },
-  config = function()
-    local neoscroll = require("neoscroll")
+	{
+		"karb94/neoscroll.nvim",
+		opts = {
+			mappings = {}, -- Disable default mappings
+		},
+		config = function()
+			local neoscroll = require("neoscroll")
 
-    -- Custom key mappings for scrolling
-    local keymap = {
-      ["<C-Down>"] = function()
-        neoscroll.scroll(5, {duration = 70, move_cursor = false}) -- Scroll down without moving the cursor
-      end, -- Scroll down
-      ["<C-Up>"] = function()
-        neoscroll.scroll(-5, {duration = 70, move_cursor = false}) -- Scroll up without moving the cursor
-      end, -- Scroll up
-    }
+			-- Custom key mappings for scrolling
+			local keymap = {
+				["<C-Down>"] = function()
+					neoscroll.scroll(5, { duration = 70, move_cursor = false }) -- Scroll down without moving the cursor
+				end,                              -- Scroll down
+				["<C-Up>"] = function()
+					neoscroll.scroll(-5, { duration = 70, move_cursor = false }) -- Scroll up without moving the cursor
+				end,                              -- Scroll up
+			}
 
-    -- Set the key mappings
-    local modes = { "n", "v", "x" }
-    for key, func in pairs(keymap) do
-      vim.keymap.set(modes, key, func, { silent = true })
-    end
-  end,
-},
+			-- Set the key mappings
+			local modes = { "n", "v", "x" }
+			for key, func in pairs(keymap) do
+				vim.keymap.set(modes, key, func, { silent = true })
+			end
+		end,
+	},
 
 	--SmearCursor
 	{
