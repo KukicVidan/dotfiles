@@ -1,0 +1,33 @@
+# : Status bar {{{
+
+[status]
+
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+overall = {}
+
+# Permissions
+perm_sep   = { fg = "darkgray" }
+perm_type  = { fg = "green" }
+perm_read  = { fg = "yellow" }
+perm_write = { fg = "red" }
+perm_exec  = { fg = "cyan" }
+
+# Progress
+progress_label  = { bold = true }
+progress_normal = {  fg = "#E9C46A", bg = "#08070C" }
+progress_error  = { fg = "#E76551", bg = "#08070C" }
+
+# Mode
+normal_main = { bg = "#F4A261", fg ="#08070C", bold = true }
+select_main = { bg = "#2A9D8F", fg ="#08070C", bold = true }
+unset_main  = { bg = "#E76551", fg ="#08070C" ,bold = true }
+
+# Permissions
+permissions_t = { fg = "#E9C48A" }
+permissions_w = { fg = "#E76551" }
+permissions_x = { fg = "#2A9D8F" }
+permissions_r = { fg = "#264653" }
+permissions_s = { fg = "#EBDBB2" }
+
+# : }}}

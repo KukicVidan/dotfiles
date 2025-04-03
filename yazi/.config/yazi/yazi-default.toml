@@ -219,3 +219,8 @@ sort_by      	 = "none"
 sort_sensitive = false
 sort_reverse 	 = false
 sort_translit  = false
+
+[[input.prepend_keymap]]
+on   = "<Esc>"
+run  = "close"
+desc = "Cancel input"
