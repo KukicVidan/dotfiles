@@ -138,3 +138,10 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 export PATH=$PATH:/home/vidan/.spicetify
+
+
+convert-video() {
+    for file in *.mp4; do
+        ffmpeg -i "$file" -vf "scale=1920:1080" -c:v dnxhd -b:v 185M -pix_fmt yuv422p -c:a pcm_s16le "${file%.mp4}_dnxhd.mov"
+    done
+}
