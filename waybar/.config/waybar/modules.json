@@ -942,4 +942,12 @@
     "interval": 1,
     "on-click": "hyprctl keywordlayout toggle"
 },
+ "hyprland/language": {
 
+  "format": "<span color='#f9e2af'>󰌌</span> <span color='#cdd6f4'>{}</span>",
+
+  "format-rs": "srb",
+
+  "format-en": "eng",
+
+},
