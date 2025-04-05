@@ -5,17 +5,6 @@
 
 // Weather and Temperature Modules as this is most like to change always. 
 // Result is of course easier to edit
-"custom/weather": {
-	"format": "{}",
-	"format-alt": "{alt}: {}",
-	"format-alt-click": "click",
-	"interval": 3600,
-	"return-type": "json",
-	"exec": "~/.config/hypr/UserScripts/Weather.sh",
-	//"exec": "~/.config/hypr/UserScripts/Weather.py",
-	"exec-if": "ping wttr.in -c1",
-	"tooltip": true,
-},
 
 "temperature": {
     "interval": 10,
@@ -736,7 +725,8 @@
 "custom/logo": {
   "exec": "echo ' 󰣇 '",
   "interval": 0,
-  "format": "{}"
+  "format": "{}",
+  "on-click": "hyprsysteminfo"
 },
 
 "custom/power": {
@@ -904,16 +894,6 @@
 	"tooltip": true,
 },
 }
-"network": {
-    // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "({signalStrength}%) ",
-    "format-ethernet": "󰈀",
-    "tooltip-format": "{ipaddr}\n<b>up:</b> {bandwidthUpBytes} <b>down:</b> {bandwidthDownBytes}",
-    "format-linked": "{ifname} (No IP) ?",
-    "format-disconnected": "No connection",
-    "on-click": "networkmanager_dmenu",
-    "on-click-right": "$TERMINAL -a floatterm -e nethogs"
-  },
 
 //NEW ONES
 
@@ -950,4 +930,10 @@
 
   "format-en": "eng",
 
+},
+
+"custom/weather": {
+  "exec": "~/.config/waybar/scripts/weather.sh",
+  "interval": 600, // updates every 10 minutes
+  "return-type": "text"
 },

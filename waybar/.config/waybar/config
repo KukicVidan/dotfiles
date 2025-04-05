@@ -46,10 +46,12 @@
 	"custom/playerctl",
 
 	"custom/separator#dot-line",
+	
 	"disk",
+	"custom/weather",
 	"tray",
 	"temperature",
-	"",
+	
 	"custom/updates",
 	//"custom/separator#dot-line",
 	//"group/motherboard",
@@ -68,6 +70,15 @@
 	
 	],
 	
+"custom/weather": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/weather.sh",
+    "interval": 600, // 10 minuta
+    "return-type": "text",
+    "tooltip": false
+},
+
+
     "custom/updates": {
     "format": "{}{icon}",
     "return-type": "json",
@@ -75,6 +86,7 @@
         "has-updates": "📦",
         "updated": "📦"
     },
+
  "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"
 }

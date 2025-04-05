@@ -2,4 +2,4 @@
 /newsboat/.newsboat/cache.db.lock
 /newsboat/.newsboat/history.cmdline
 /spotify-player/.config/spotify-player/app.toml
-
+/waybar/.config/waybar/scripts/.env	
