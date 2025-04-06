@@ -119,6 +119,8 @@ source $ZSH/oh-my-zsh.sh
  alias reloadWaybar='killall waybar
 waybar & disown' 
 
+ alias disk='baobab'
+
 alias calendar='calcurse'
 alias hint="bat --color=always --style=plain --paging=never ~/dotfiles/HINTS/hints.md"
 alias fzf="fzf --preview "bat --color=always --style=numbers --line-range=:500 {}""
