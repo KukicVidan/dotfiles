@@ -145,3 +145,11 @@ convert-video() {
         ffmpeg -i "$file" -vf "scale=1920:1080" -c:v dnxhd -b:v 185M -pix_fmt yuv422p -c:a pcm_s16le "${file%.mp4}_dnxhd.mov"
     done
 }
+
+
+
+compress-video() {
+  input="$1"
+  output="${input%.*}-kompresovan.mp4"
+  ffmpeg -i "$input" -vcodec libx264 -preset ultrafast -crf 35 -acodec aac -b:a 96k "$output"
+}
