@@ -15,3 +15,9 @@
 # Boostable USB
 
 >`sudo woeusb --target-filesystem NTFS --device ~/Downloads/Windows11.iso /dev/sda`
+
+
+v>`lsusb` ---> list usb devices
+v>`lsblk` ---> list storage devices
+
+
