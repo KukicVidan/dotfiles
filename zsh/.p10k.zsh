@@ -41,7 +41,7 @@
     virtualenv                # python virtual environment
     #context                   # user@host
     #time_pretty 
-    time                      # current time
+    #time                      # current time
     newline                   # \n
     
   )
