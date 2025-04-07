@@ -11,3 +11,7 @@
 >`s/SelectWhatToChange/ChangingSelectedInto?/g` ---> Will replace selected word
 
 >`v + gc` ---> Comment multiple lines 
+
+# Boostable USB
+
+>`sudo woeusb --target-filesystem NTFS --device ~/Downloads/Windows11.iso /dev/sda`
