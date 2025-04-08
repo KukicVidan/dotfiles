@@ -17,10 +17,17 @@
 >`sudo woeusb --target-filesystem NTFS --device ~/Downloads/Windows11.iso /dev/sda`
 
 
-v>`lsusb` ---> list usb devices
-v>`lsblk` ---> list storage devices
+>`lsusb` ---> list usb devices
+>`lsblk` ---> list storage devices
 
 # Download audio from yt
-yt-dlp --extract-audio + {url of the videa}
+ylt-dlp --extract-audio + {url of the videa}
 kid3 ---> edit metadata of audiobook 
 
+# Compress video for YT
+
+This one is CPU encoding
+> ffmpeg -i "Video from davinci.mov" -c:v libx264 -preset slow -crf 20 -c:a aac -b:a 160k -movflags +faststart "Output_Name_YT.mp4"
+
+This one is GPU encoding
+>ffmpeg -i "Video from davinci.mov" -c:v h264_nvenc -preset p7 -cq 20 -c:a aac -b:a 160k -movflags +faststart "Output_Name_YT.mp4"
