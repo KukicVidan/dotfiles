@@ -120,7 +120,7 @@ require("lazy").setup({
 		config = function()
 			require("mason").setup() -- Mason for installing LSPs
 			require("mason-lspconfig").setup({
-				ensure_installed = { "clangd", "lua_ls", "ts_ls", "bashls", "cssls", "jsonls" },
+				ensure_installed = { "clangd", "lua_ls", "ts_ls", "bashls", "cssls", "jsonls", "rust_analyzer"  },
 			})
 
 			local lspconfig = require("lspconfig")
@@ -140,6 +140,7 @@ require("lazy").setup({
 			lspconfig.bashls.setup({}) -- Shell
 			lspconfig.cssls.setup({}) -- CSS
 			lspconfig.jsonls.setup({}) -- JSON
+			lspconfig.rust_analyzer.setup({}) --RUST
 		end,
 	},
 	--Formating --
@@ -168,6 +169,9 @@ require("lazy").setup({
 
 					-- JSON Formatter
 					null_ls.builtins.formatting.prettier,
+
+ 					-- Rust Formatter (rustfmt)
+        				null_ls.builtins.formatting.rustfmt,
 				},
 			})
 		end,
