@@ -1,13 +1,20 @@
 
+
 #!/bin/bash
 
-# Define the base directory for audiobooks
-AUDIOBOOKS_DIR="$HOME/Documents/Audiobooks"
+# Path to your audiobooks folder
+AUDIOBOOKS_DIR=~/Documents/Audiobooks
 
-# Find all .opus files in the directory and subdirectories
-# You can change "*.opus" to another extension if needed (e.g., *.mp3, *.flac)
-find "$AUDIOBOOKS_DIR" -type f -name "*.opus" | while read -r file; do
-    # Open each file in mpv
-    mpv "$file"
-done
+# Find all .opus files, extract the subfolder and filename, and display them with fzf
+selected_book=$(find "$AUDIOBOOKS_DIR" -type f -name "*.opus" | awk -F/ '{print $(NF-1)"/"$NF}' | fzf)
+
+# If a book was selected, play it with mpv
+if [[ -n "$selected_book" ]]; then
+    # Get the full path of the selected book
+    full_path=$(find "$AUDIOBOOKS_DIR" -type f -name "*.opus" | grep -F "$selected_book")
+    # Play the selected audiobook with mpv
+    mpv "$full_path"
+else
+    echo "No audiobook selected."
+fi
 

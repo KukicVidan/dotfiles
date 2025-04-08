@@ -21,6 +21,6 @@ v>`lsusb` ---> list usb devices
 v>`lsblk` ---> list storage devices
 
 # Download audio from yt
-yt-dlp --extract-audio "url of the video"
+yt-dlp --extract-audio + {url of the videa}
 kid3 ---> edit metadata of audiobook 
 
