@@ -120,27 +120,28 @@ require("lazy").setup({
 		config = function()
 			require("mason").setup() -- Mason for installing LSPs
 			require("mason-lspconfig").setup({
-				ensure_installed = { "clangd", "lua_ls", "ts_ls", "bashls", "cssls", "jsonls", "rust_analyzer"  },
+				ensure_installed = { "clangd", "lua_ls", "ts_ls", "bashls", "cssls", "jsonls", "rust_analyzer" },
 			})
 
 			local lspconfig = require("lspconfig")
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			-- Enable LSPs for different languages
-			lspconfig.clangd.setup({}) -- C/C++
-			lspconfig.lua_ls.setup({ -- Lua
+			lspconfig.clangd.setup({ capabilities = capabilities })
+			lspconfig.lua_ls.setup({
+				capabilities = capabilities,
 				settings = {
 					Lua = {
 						runtime = { version = "LuaJIT" },
-						diagnostics = { globals = { "vim" } }, -- Fix 'vim' not found
+						diagnostics = { globals = { "vim" } },
 						workspace = { checkThirdParty = false },
 					},
 				},
 			})
-			lspconfig.ts_ls.setup({}) -- JavaScript/TypeScript
-			lspconfig.bashls.setup({}) -- Shell
-			lspconfig.cssls.setup({}) -- CSS
-			lspconfig.jsonls.setup({}) -- JSON
-			lspconfig.rust_analyzer.setup({}) --RUST
+			lspconfig.tsserver.setup({ capabilities = capabilities })
+			lspconfig.bashls.setup({ capabilities = capabilities })
+			lspconfig.cssls.setup({ capabilities = capabilities })
+			lspconfig.jsonls.setup({ capabilities = capabilities })
+			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 		end,
 	},
 	--Formating --
@@ -170,9 +171,16 @@ require("lazy").setup({
 					-- JSON Formatter
 					null_ls.builtins.formatting.prettier,
 
- 					-- Rust Formatter (rustfmt)
-        				null_ls.builtins.formatting.rustfmt,
+					-- Rust Formatter (rustfmt)
+					null_ls.builtins.formatting.rustfmt,
 				},
+			})
+
+			vim.api.nvim_create_autocmd("BufWritePre", {
+				pattern = "*",
+				callback = function()
+					vim.lsp.buf.format({ async = false })
+				end,
 			})
 		end,
 	},
@@ -220,5 +228,15 @@ require("lazy").setup({
 	{
 		"norcalli/nvim-colorizer.lua",
 		opts = {},
+	},
+
+	--Code SNippets
+
+	{
+		"rafamadriz/friendly-snippets",
+		dependencies = { "L3MON4D3/LuaSnip" },
+		config = function()
+			require("luasnip.loaders.from_vscode").lazy_load()
+		end,
 	},
 })
