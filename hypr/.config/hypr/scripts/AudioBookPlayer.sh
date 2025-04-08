@@ -6,7 +6,9 @@
 AUDIOBOOKS_DIR=~/Documents/Audiobooks
 
 # Find all .opus files, extract the subfolder and filename, and display them with fzf
-selected_book=$(find "$AUDIOBOOKS_DIR" -type f -name "*.opus" | awk -F/ '{print $(NF-1)"/"$NF}' | fzf)
+
+selected_book=$(find "$AUDIOBOOKS_DIR" -type f \( -name "*.opus" -o -name "*.m4a" -o -name "*.mp3" -o -name "*.flac" \) | awk -F/ '{print $(NF-1)"/"$NF}' | fzf)
+
 
 # If a book was selected, play it with mpv
 if [[ -n "$selected_book" ]]; then
