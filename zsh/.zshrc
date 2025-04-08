@@ -125,6 +125,9 @@ alias calendar='calcurse'
 alias hint="bat --color=always --style=plain --paging=never ~/dotfiles/HINTS/hints.md"
 alias fzf="fzf --preview "bat --color=always --style=numbers --line-range=:500 {}""
 alias camera='guvcview --gui=none --render_window=1280x720 --device=/dev/video0'
+
+
+alias audiobook="~/dotfiles/hypr/.config/hypr/scripts/AudioBookPlayer.sh"
 # Adding path for my plugins installed from pacman
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
