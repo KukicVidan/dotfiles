@@ -7,6 +7,10 @@ key_sequence="l"
 command = "LikedTrackPage"
 key_sequence = "C-l"
 
+[[keymaps]]
+command = "SearchPage"
+key_sequence = "C-s"
+
 [[actions]]
 action="AddToLiked"
 key_sequence="l"
