@@ -12,6 +12,9 @@
 
 >`v + gc` ---> Comment multiple lines 
 
+>`SHIFT+K` ---> to see Documentation
+>`C-w, w` --->  to open popup window in NVIM 
+
 # Boostable USB
 
 >`sudo woeusb --target-filesystem NTFS --device ~/Downloads/Windows11.iso /dev/sda`
