@@ -47,7 +47,7 @@ highlight feedlist "\\(Cozy\\) .*" yellow
 highlight feedlist "\\(Arch\\) .*" magenta
 highlight feedlist "\\(News\\) .*" cyan
 highlight feedlist "\\(Farm\\) .*" green
-highlight feedlist "\\(NerdShit\\) .*"  green
+highlight feedlist "\\(NerdShit\\) .*"  magenta
 highlight feedlist "\\(Poet\\) .*"  red
 
 
