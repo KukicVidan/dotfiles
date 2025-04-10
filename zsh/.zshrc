@@ -145,6 +145,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH=$PATH:/home/vidan/.spicetify
 
+export PATH="$PATH:/home/vidan/.npm-global/bin"
 
 convert-video() {
     for file in *.mp4; do

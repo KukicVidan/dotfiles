@@ -46,7 +46,6 @@
 	"custom/playerctl",
 
 	"custom/separator#dot-line",
-	
 	"disk",
 	"custom/weather",
 	"tray",
