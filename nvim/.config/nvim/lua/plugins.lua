@@ -239,4 +239,20 @@ require("lazy").setup({
 			require("luasnip.loaders.from_vscode").lazy_load()
 		end,
 	},
+	-- fzf-lua plugin setup
+	{
+		"ibhagwan/fzf-lua",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			-- Configuration for fzf-lua
+			require("fzf-lua").setup({
+				previewers = {
+					media = {
+						enabled = true,
+						tools = { "viu" },
+					},
+				},
+			})
+		end
+	},
 })
