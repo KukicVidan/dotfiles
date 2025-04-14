@@ -6,9 +6,6 @@ vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = '#070603' })
 -- Set Nvim Tree background color
 vim.api.nvim_set_hl(0, 'NvimTreeNormalNC', { bg = '#070603' })
 
-
-
-
 require('lualine').setup {
 	options = {
 		theme = 'codedark',

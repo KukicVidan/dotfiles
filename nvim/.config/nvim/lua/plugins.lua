@@ -51,7 +51,7 @@ require("lazy").setup({
 					project = { enable = false, limit = 5 },
 					mru = { enable = false, limit = 4 },
 
-					footer = { "Balkan Linux on  󰣇  btw" },
+					footer = { "Folk Friequancy on  󰣇  btw" },
 				},
 			})
 		end,
