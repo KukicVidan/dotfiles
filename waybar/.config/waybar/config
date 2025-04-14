@@ -18,29 +18,26 @@
 	"custom/logo",
 	//"hyprland/workspaces#pacman",
 	"hyprland/workspaces#rw",
-	"custom/separator#dot-line",
-	"custom/separator#blank_3",
 	
 	
-	"hyprland/window",
 	
 
 	
         
 	
 	],
-//"modules-center": [
-	
-	//"custom/cava_mviz",
-//	"custom/separator#dot-line",
+"modules-center": [
 	
 	
-//	],
+	],
+
 	"clock": {
         "format": "{:%H:%M}",
     },
 "modules-right": [
 
+	
+	"hyprland/window",
 	
 	//"mpris",
 	"custom/playerctl",
