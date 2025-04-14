@@ -18,6 +18,9 @@
 	"custom/logo",
 	//"hyprland/workspaces#pacman",
 	"hyprland/workspaces#rw",
+
+	"hyprland/window",
+
 	
 	
 	
@@ -37,7 +40,6 @@
 "modules-right": [
 
 	
-	"hyprland/window",
 	
 	//"mpris",
 	"custom/playerctl",
