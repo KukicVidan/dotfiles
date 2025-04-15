@@ -8,6 +8,8 @@
 
 > `systemctl --failed `---> Failed Systems
 
+> `cht.sh  [INFO]`---> best TLDR and MAN in one
+
 # Nvim:
 
 > `s/SelectWhatToChange/ChangingSelectedInto?/g` ---> Will replace selected word

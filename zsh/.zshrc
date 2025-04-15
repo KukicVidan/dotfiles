@@ -121,6 +121,7 @@ source $ZSH/oh-my-zsh.sh
 waybar & disown' 
 
  alias disk='baobab'
+ alias whatsapp='nchat'
 
 alias calendar='calcurse'
 alias hint="bat --color=always --style=plain --paging=never ~/dotfiles/HINTS/hints.md"
