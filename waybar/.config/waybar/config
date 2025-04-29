@@ -17,9 +17,9 @@
 	
 	"custom/logo",
 	//"hyprland/workspaces#pacman",
-	"hyprland/workspaces#rw",
+	"hyprland/workspaces#rw"
 
-	"hyprland/window",
+	//"hyprland/window",
 
 	
 	
@@ -41,22 +41,23 @@
 
 	
 	
-	//"mpris",
-	"custom/playerctl",
+	//"custom/playerctl",
 
 	"custom/separator#dot-line",
 	"disk",
 	"custom/weather",
 	"tray",
-	"temperature",
 	
 	"custom/updates",
+
+	"temperature",
 	//"custom/separator#dot-line",
 	//"group/motherboard",
 	
 	"custom/separator#dot-line",
 	
 	
+	"mpris",
 	
 	"custom/separator#blank_2",
 
@@ -81,8 +82,8 @@
     "format": "{}{icon}",
     "return-type": "json",
     "format-icons": {
-        "has-updates": "📦",
-        "updated": "📦"
+        "has-updates": "  ",
+        "updated": "  "
     },
 
  "exec-if": "which waybar-module-pacman-updates",
