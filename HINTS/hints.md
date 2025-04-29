@@ -16,6 +16,8 @@
 
 > `v + gc` ---> Comment multiple lines
 
+> `ysiw` ---> Add quotes
+
 > `SHIFT+K` ---> to see Documentation
 > `C-w, w` ---> to open popup window in NVIM
 
