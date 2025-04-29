@@ -304,6 +304,15 @@ require("lazy").setup({
 
 		config = function()
 			require('telescope').setup {
+				defaults = {
+					layout_config = {
+						width = 0.9,
+						height = 0.8,
+						preview_cutoff = 120,
+					},
+					sorting_strategy = "ascending",
+					layout_strategy = "bottom_pane", -- or "horizontal", "vertical"
+				},
 				pickers = {
 					find_files = {
 						theme = "ivy",
@@ -324,8 +333,15 @@ require("lazy").setup({
 			-- Keymaps with beginner comments
 			vim.keymap.set("n", "<space>ff", require('telescope.builtin').find_files) -- Find files in project
 			vim.keymap.set("n", "<space>fg", require('telescope.builtin').live_grep) -- Search inside files for text
-			vim.keymap.set("n", "<space>fb", require('telescope.builtin').buffers) -- Switch between open files
+			vim.keymap.set("n", "<space>fb", require('telescope.builtin').buffers)  -- Switch between open files
 			vim.keymap.set("n", "<space>fh", require('telescope.builtin').help_tags) -- Search through Neovim help
+
+			vim.keymap.set("n", "gr", require('telescope.builtin').lsp_references)  -- "gr" = Go to References
+			vim.keymap.set("n", "gd", require('telescope.builtin').lsp_definitions) -- "gd" = Go to Definition
+
+			vim.keymap.set("n", "gi", require('telescope.builtin').lsp_implementations) -- find implementation
+			vim.keymap.set("n", "<space>ds", require('telescope.builtin').lsp_document_symbols) -- list all symbols in file
+			vim.keymap.set("n", "<space>ws", require('telescope.builtin').lsp_dynamic_workspace_symbols) -- search all symbols in workspace
 		end
 
 	},
