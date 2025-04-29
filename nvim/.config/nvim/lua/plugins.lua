@@ -290,6 +290,7 @@ require("lazy").setup({
 			debug = false -- Prints errors and the command which is run.
 		}
 	},
+	{ 'tpope/vim-surround' },
 
 	--Telescope
 	{
