@@ -291,4 +291,43 @@ require("lazy").setup({
 		}
 	},
 
+	--Telescope
+	{
+		'nvim-telescope/telescope.nvim',
+		tag = '0.1.8',
+		-- or                              , branch = '0.1.x',
+		dependencies = { 'nvim-lua/plenary.nvim',
+			{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }
+		},
+
+
+
+		config = function()
+			require('telescope').setup {
+				pickers = {
+					find_files = {
+						theme = "ivy",
+						hidden = true, -- show hidden files (dotfiles)
+					},
+					live_grep = {
+						theme = "ivy", -- search inside files with ivy layout
+					},
+					buffers = {
+						theme = "ivy", -- switch open buffers (open files)
+					},
+					help_tags = {
+						theme = "ivy", -- search Neovim help docs
+					},
+				}
+			}
+
+			-- Keymaps with beginner comments
+			vim.keymap.set("n", "<space>ff", require('telescope.builtin').find_files) -- Find files in project
+			vim.keymap.set("n", "<space>fg", require('telescope.builtin').live_grep) -- Search inside files for text
+			vim.keymap.set("n", "<space>fb", require('telescope.builtin').buffers) -- Switch between open files
+			vim.keymap.set("n", "<space>fh", require('telescope.builtin').help_tags) -- Search through Neovim help
+		end
+
+	},
+
 })
