@@ -29,10 +29,13 @@
 
   # Left prompt segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-    dir                       # current directory
-    vcs                       # git status
-    newline                   # \n
+    #newline                   # \n
+
     prompt_char               # prompt symbol
+
+    dir                       # current directory
+
+    vcs                       # git status
   )
 
   # Right prompt segments.
@@ -42,7 +45,7 @@
     #context                   # user@host
     #time_pretty 
     #time                      # current time
-    newline                   # \n
+    #newline                   # \n
     
   )
 
@@ -60,7 +63,7 @@
   typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS}_FOREGROUND=$magenta
   # Red prompt symbol if last command failed.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS}_FOREGROUND=$red
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='❯'
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='󱦰 '
   typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VICMD_CONTENT_EXPANSION='❮'
 
   # Blue current directory.
