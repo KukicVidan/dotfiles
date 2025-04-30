@@ -3,7 +3,7 @@
 "layer": "top",
 //"mode": "dock",
 "exclusive": true,
-"passthrough": false,
+"passthrough": true,
 "position": "bottom",
 "spacing": 6,
 "fixed-center": true,
@@ -15,10 +15,10 @@
 
 "modules-left": [
 	
-	"custom/logo",
+	//"custom/logo",
 	//"hyprland/workspaces#pacman",
-	"hyprland/workspaces#rw"
-
+	//"hyprland/workspaces#rw"
+	"hyprland/workspaces#kanjy"
 	//"hyprland/window",
 
 	
@@ -31,7 +31,7 @@
 	],
 "modules-center": [
 	
-	
+		
 	],
 
 "modules-right": [
