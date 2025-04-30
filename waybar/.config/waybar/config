@@ -67,7 +67,7 @@
 	],
 	
 "custom/weather": {
-    "format": "{}",
+    "format": "{} ",
     "exec": "~/.config/waybar/scripts/weather.sh",
     "interval": 600, // 10 minuta
     "return-type": "text",
