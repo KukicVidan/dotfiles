@@ -387,18 +387,19 @@
 	"clock": {
 		"interval": 1,
 		//"format": " {:%I:%M %p}", // AM PM format
-		"format": " {:%H:%M:%S}", // 24H
-		"format-alt": "🕐 {:%H:%M  📅  %d %B, %A}",
+		//"format": " {:%H:%M:}", // 24H
+		"format": "  {:%H:%M    %d %B, %A}",
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
 		"calendar": {
 			"mode": "year",
-			"mode-mon-col": 3,
-			"weeks-pos": "right",
-			"on-scroll": 1,
+			"mode-mon-col": 4,
+			//"weeks-pos": "right",
+			//"on-scroll": 1,
+			"first-day-of-week": 1,
 			"format": {
 				"months": "<span color='#ffead3'><b>{}</b></span>",
 				"days": "<span color='#ecc6d9'><b>{}</b></span>",
-				"weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+				//"weeks": "<span color='#99ffdd'><b>W{}</b></span>",
 				"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
 				"today": "<span color='#ff6699'><b><u>{}</u></b></span>"
 			}

@@ -34,9 +34,6 @@
 	
 	],
 
-	"clock": {
-        "format": "{:%H:%M}",
-    },
 "modules-right": [
 
 	
