@@ -114,6 +114,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
  alias ls='lsd'
+
+
  alias audio='pavucontrol'
  alias goodnight='hyprctl dispatch exit'
  alias pdf='zathura'
@@ -122,6 +124,7 @@ waybar & disown'
 
  alias disk='baobab'
  alias whatsapp='nchat'
+
 
 alias calendar='calcurse'
 alias hint="bat --color=always --style=plain --paging=never ~/dotfiles/HINTS/hints.md"
