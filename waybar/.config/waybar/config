@@ -40,7 +40,6 @@
 	
 	//"custom/playerctl",
 
-	"custom/separator#dot-line",
 	"disk",
 	"custom/weather",
 	"tray",
@@ -56,9 +55,10 @@
 	
 	"mpris",
 	
-	"custom/separator#blank_2",
+	
 
 	
+	"custom/separator#dot-line",
 
 	"clock",
 	"custom/separator#blank_3"
