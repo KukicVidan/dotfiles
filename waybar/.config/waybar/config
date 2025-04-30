@@ -3,9 +3,9 @@
 "layer": "top",
 //"mode": "dock",
 "exclusive": true,
-"passthrough": true,
+"passthrough": false,
 "position": "bottom",
-"spacing": 6,
+"spacing": 3,
 "fixed-center": true,
 "ipc": true,
 "margin-top": 0,
@@ -50,7 +50,7 @@
 	//"custom/separator#dot-line",
 	//"group/motherboard",
 	
-	"custom/separator#dot-line",
+	
 	
 	
 	"mpris",
