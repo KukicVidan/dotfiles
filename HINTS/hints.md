@@ -33,6 +33,14 @@
 ylt-dlp --extract-audio + {url of the videa}
 kid3 ---> edit metadata of audiobook
 
+# Download video from ylt
+
+> Single Video HQ
+> yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 "<video-url>"
+
+> Playlist
+> yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 "<playlist-url>"
+
 # Compress video for YT
 
 This one is CPU encoding

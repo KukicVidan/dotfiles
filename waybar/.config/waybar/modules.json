@@ -521,7 +521,7 @@
 		"on-click": "playerctl play-pause",
 		"player-icons": {
 			"chromium": " ",
-			"default": " ",
+			"default": " ",
 			"firefox": " ",
 			"kdeconnect": " ",
 			"mopidy": " ",
