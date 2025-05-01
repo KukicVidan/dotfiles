@@ -113,7 +113,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
- alias ls='lsd'
+
+alias fontChanger-kitty='kitty +kitten choose_fonts'
+
+
+alias ls='lsd'
 
 
  alias audio='pavucontrol'

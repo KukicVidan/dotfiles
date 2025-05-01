@@ -8,9 +8,9 @@
 
 
 ######DEJAVU SANS MONO
-# font_family DejaVu Sans Mono
-# bold_font DejaVu Sans Mono, Bold
-# italic_font DejaVu Sans Mono, Light
+font_family DejaVu Sans Mono
+bold_font DejaVu Sans Mono, Bold
+italic_font DejaVu Sans Mono, Light
 
 
 
@@ -21,7 +21,7 @@
 # font_family      Liberation Mono Font 
 # bold_font        Liberation Mono Font, Bold
 # italic_font      Liberation Mono Font, Light
-# bold_italic_font auto
+bold_italic_font auto
 font_size 18
 
 # vim:ft=kitty
@@ -160,11 +160,3 @@ active_tab_foreground        #d4ddea
 
 
 send_alt_esc yes
-
-
-# BEGIN_KITTY_FONTS
-font_family      family="FreeMono"
-bold_font        auto
-italic_font      auto
-bold_italic_font auto
-# END_KITTY_FONTS
