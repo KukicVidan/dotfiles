@@ -81,7 +81,7 @@ listview {
 }
 
 element-text {
-  font: "Fira Code  12";
+  font: "FreeMono 12";
   
 }
 
