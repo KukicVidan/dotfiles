@@ -126,7 +126,7 @@ alias ls='lsd'
  alias reloadWaybar='killall waybar
 waybar & disown' 
 
- alias disk='baobab'
+ alias disk='ncdu --color=dark'
  alias whatsapp='nchat'
 
 
