@@ -1,27 +1,28 @@
 "query:Blogs:tags # \"Blog\""
 https://georgerrmartin.com/notablog/feed Blog "~❤️‍🔥George R.R. Martin" 
-
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJmFdLo1yNSISiDnf170TLA Farm "~🌽🧑‍🌾Na Selo Brale!"
-
-https://www.youtube.com/feeds/videos.xml?channel_id=UC1haq8KffCINVy9Vp7WVERw Farm "~🧺🌾 Ali's Organic Garden & Homestead"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXat06LvIYIyE2SpV_IuVjA Poet "~🍀 Malcolm Guite"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCljc-7r4xZtIoICjz9me8tQ Poet "~📖 Hanni Ram"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCg3eh9iFQUxoytZiCtvj2dA Poet "~📴 offluencer"
+
+"query:Farm:tags # \"Farm\"""
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJmFdLo1yNSISiDnf170TLA Farm "~🌽🧑‍🌾Na Selo Brale!"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCMC74jJz0cL7mkNxELwoVsQ Farm "~🌿 Ljekovite Biljke"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC1haq8KffCINVy9Vp7WVERw Farm "~🧺🌾 Ali's Organic Garden & Homestead"
 
 
-"query:News:tags # \"News\""
+"query:Tech:tags # \"Tech\""
 https://www.cyberciti.biz/feed/ News "~🗞️ Cyberciti"
 https://www.linux.com/feed/ News "~🐧 Linux.com"
-"query:Arch:tags # \"Arch\""
 https://archlinux.org/feeds/news/ Arch news "~󰣇 archlinux.org"
+
+
 "query:YouTube:tags # \"YouTube\""
 https://www.youtube.com/feeds/videos.xml?channel_id=UCwHwDuNd9lCdA7chyyquDXw Cozy "~🍞 Bread On Penguins"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCrwOzu7ienZYuzAdeeRL4rQ Cozy "~🦒 Andrew Giraffe"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA YouTube "~🔥 Fireship"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVg2AVe6eTCTVoWQ9AwrIHg NerdShit "~⚔️ In Deep Geek"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCW0gH2G-cMKAEjEkI4YhnPA NerdShit "~🧭 Nerd Of The Rings"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCMC74jJz0cL7mkNxELwoVsQ Farm "~🌿 Ljekovite Biljke"
-"query:Ortodox :tags # \"Ortodox\""
-https://www.youtube.com/feeds/videos.xml?channel_id=UCwa4Uk-Umm3OcKR6wCgfSvQ Ortodox "~⛪💪🏻Biblically Masculine"
 
+"query:ortodox :tags # \"ortodox\""
 https://www.youtube.com/feeds/videos.xml?channel_id=UCkpBmkoZ6yToHhB8uFDp46Q Ortodox "~⛪🐦‍⬛ Father Spyridon"
+
+
+"query:Podcast:tags # \"Podcast\""
+https://notrelated.xyz/rss.xml Cozy "~🏛️ Not Related! A Big-Braned Podcast"

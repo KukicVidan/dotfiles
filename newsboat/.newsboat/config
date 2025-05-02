@@ -50,6 +50,9 @@ highlight feedlist "\\(Farm\\) .*" green
 highlight feedlist "\\(NerdShit\\) .*"  magenta
 highlight feedlist "\\(Poet\\) .*"  red
 highlight feedlist "\\(Ortodox\\) .*"  blue
+highlight feedlist "\\(Podcast\\) .*"  white
+
+
 
 
 

@@ -150,7 +150,6 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ## [/Completion]
 
 
-export PATH=$PATH:/home/vidan/.spicetify
 
 export PATH="$PATH:/home/vidan/.npm-global/bin"
 
@@ -167,3 +166,23 @@ compress-video() {
   output="${input%.*}-kompresovan.mp4"
   ffmpeg -i "$input" -vcodec libx264 -preset ultrafast -crf 35 -acodec aac -b:a 96k "$output"
 }
+
+
+#no prompt bold
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[default]='none'
+ZSH_HIGHLIGHT_STYLES[command]='fg=green'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
+
+
+# Turn off bold in completion menu
+# zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+# zstyle ':completion:*' menu select
+
+
+# Disable bold in completion menu
+zstyle ':completion:*' format '%F{yellow}%p%%f'
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' menu select=2
+
+export LS_COLORS='di=34:ln=36:so=32:pi=33:ex=31:bd=33:cd=33:su=37:sg=37:tw=30:ow=34'

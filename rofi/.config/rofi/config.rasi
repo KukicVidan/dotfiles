@@ -14,7 +14,7 @@
 
 * {
     /* Theme settings */
-    highlight: bold italic;
+    highlight:  italic;
     scrollbar: true;
 
     /* Gruvbox dark colors */
@@ -22,7 +22,7 @@
     gruvbox-dark-bg0-soft:     #16130b;
     gruvbox-dark-bg3:          #665c54;
     gruvbox-dark-fg0:          #fbf1c7;
-    gruvbox-dark-fg1:          #ebdbb2;
+    gruvbox-dark-fg1:          #7c7d93;
     gruvbox-dark-red-dark:     #cc241d;
     gruvbox-dark-red-light:    #fb4934;
     gruvbox-dark-yellow-dark:  #d79921;
@@ -81,7 +81,7 @@ listview {
 }
 
 element-text {
-  font: "FreeMono 12";
+  font: "Liberation Mono 12";
   
 }
 
