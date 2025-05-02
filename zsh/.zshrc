@@ -116,9 +116,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias fontChanger-kitty='kitty +kitten choose_fonts'
 
-
 alias ls='lsd'
-
+alias feh='feh --image-bg "#070603"'
 
  alias audio='pavucontrol'
  alias goodnight='hyprctl dispatch exit'
