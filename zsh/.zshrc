@@ -176,8 +176,8 @@ ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
 
 
 # Turn off bold in completion menu
-# zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-# zstyle ':completion:*' menu select
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' menu select
 
 
 # Disable bold in completion menu
