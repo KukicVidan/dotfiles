@@ -13,6 +13,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export TERM=xterm-256color
 
 export EDITOR=nvim
+export WALLPAPER_DIR="$HOME/dotfiles/wallpapers/"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
