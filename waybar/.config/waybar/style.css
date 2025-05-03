@@ -1,67 +1,67 @@
 * {
-  font-family: "Liberation Mono Font", sans-serif;
-  font-size: 17px;
-  border-radius: 0px;
+	font-family: "Liberation Mono Font", sans-serif;
+	font-size: 17px;
+	border-radius: 0px;
 }
 
 #waybar {
-  background: #070603;
-  color: #7c7d93;
-  border: none;
+	background: #070603;
+	color: #7c7d93;
+	border: none;
 }
 
 #workspaces button {
-  color: gray;
-  background: transparent;
-  padding: 5px;
-  color: #7c7d93;
+	color: gray;
+	background: transparent;
+	padding: 5px;
+	color: #7c7d93;
 }
 
 #workspaces button.active {
-  color: white;
+	color: white;
 
-  background: #463528;
+	background: #463528;
 }
 
 #network {
-  margin-right: 10px;
-  margin-left: 15px;
+	margin-right: 10px;
+	margin-left: 15px;
 }
 
 #custom-updates {
-  background-color: transparent;
-  font-size: 17px;
-  margin-right: 3px;
-  margin-left: 3px;
-  color: #7c7d93;
+	background-color: transparent;
+	font-size: 17px;
+	margin-right: 3px;
+	margin-left: 3px;
+	color: #7c7d93;
 }
 
 #tray {
-  font-size: 21px;
-  color: #7c7d93;
+	font-size: 21px;
+	color: #7c7d93;
 }
 
 #custom-logo {
-  color: #458588;
+	color: #458588;
 
-  font-size: 25px;
-  padding-right: 7px;
+	font-size: 25px;
+	padding-right: 7px;
 }
 
 #custom-playerctl {
-  color: #c4ad76;
-  font-size: 17px;
+	color: #c4ad76;
+	font-size: 17px;
 }
 
 #mpris {
-  color: #7c7d93;
+	color: #7c7d93;
 }
 
 #clock {
-  font-size: 17px;
+	font-size: 17px;
 }
 
 #window {
-  margin-left: 30px;
-  color: #7c7d93;
+	margin-left: 30px;
+	color: #7c7d93;
 }
