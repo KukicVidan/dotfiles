@@ -1,5 +1,9 @@
-set recolor-lightcolor "rgba(0, 0, 0, 0)"
-set recolor-darkcolor "rgba(255, 255, 255, 1)"
+
+include /home/vidan/.cache/wal/colors-zathura
+
+
+# set recolor-lightcolor "rgba(0, 0, 0, 0)"
+# set recolor-darkcolor "rgba(255, 255, 255, 1)"
 map i recolor
 set recolor true
 set adjust-open "best"
