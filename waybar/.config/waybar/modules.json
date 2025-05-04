@@ -12,7 +12,7 @@
 		],
 		"critical-threshold": 82,
 		"format-critical": "{temperatureC}°C {icon}",
-		"format": "   {temperatureC}°C ",
+		"format": "  {temperatureC}°C ",
 		"format-icons": [
 			"󰈸"
 		],
@@ -73,16 +73,16 @@
 			"5": [],
 		},
 		"format-icons": {
-			"1": "I",
-			"2": "II",
-			"3": "III",
-			"4": "IV",
-			"5": "V",
-			"6": "VI",
-			"7": "VII",
-			"8": "VIII",
-			"9": "IX",
-			"10": "X",
+			"1": "1",
+			"2": "2",
+			"3": "3",
+			"4": "4",
+			"5": "5",
+			"6": "6",
+			"7": "7",
+			"8": "8",
+			"9": "9",
+			"10": "0",
 		},
 	},
 	// PACMAN Style
@@ -170,7 +170,7 @@
 		"on-click": "activate",
 		"on-scroll-up": "hyprctl dispatch workspace e+1",
 		"on-scroll-down": "hyprctl dispatch workspace e-1",
-		"format": "{icon} {windows}",
+		"format": "{icon}[{windows}]",
 		"format-window-separator": " ",
 		"window-rewrite-default": " ",
 		"window-rewrite": {
@@ -216,7 +216,7 @@
 			"7": "7",
 			"8": "8",
 			"9": "9",
-			"10": "10",
+			"10": "0",
 		}
 	},
 	// for Camilla or Spanish
@@ -388,7 +388,7 @@
 		"interval": 1,
 		//"format": " {:%I:%M %p}", // AM PM format
 		//"format": " {:%H:%M:}", // 24H
-		"format": "  {:%H:%M    %d %B, %A}",
+		"format": "    {:%H:%M    %d %B, %A}  ",
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
 		"calendar": {
 			"mode": "year",
@@ -458,7 +458,7 @@
 		//"format": "󰋊",
 		"path": "/",
 		//"format-alt-click": "click",
-		"format": "󱛟  {used}  ",
+		"format": "   󱛟  {used}  ",
 		//"tooltip": true,
 		"tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
 	},
@@ -469,22 +469,26 @@
 		"keyboard-name": "at-translated-set-2-keyboard",
 		"on-click": "hyprctl switchxkblayout $SET_KB next"
 	},
-	"hyprland/submap": {
-		"format": "<span style=\"italic\">  {}</span>", // Icon: expand-arrows-alt
-		"tooltip": false,
-	},
 	"hyprland/window": {
 		"format": "{}",
-		"max-length": 27,
+		"icon": "true",
+		//"max-length": 27,
 		"separate-outputs": true,
-		"offscreen-css": true,
-		"offscreen-css-text": "(inactive)",
+		//"offscreen-css": true,
+		//"offscreen-css-text": "(inactive)",
 		"rewrite": {
-			"(.*) — Mozilla Firefox": "  $1",
-			"(.*) - fish": "> [$1]",
-			"(.*) - zsh": ">  [$1]",
-			"(.*) - $term": "> [$1]",
+			"(.*) — Mozilla Firefox": "$1",
+			"(.*) - fish": "[$1]",
+			"(.*) - zsh": "[$1]",
+			"(.*) - $term": "[$1]",
 		},
+	},
+	"hyprland/submap": {
+		"format": "{}"
+	},
+	"custom/dwm": {
+		"exec": "echo '[]='",
+		"interval": 0
 	},
 	"idle_inhibitor": {
 		"format": "{icon}",
@@ -516,7 +520,7 @@
 	},
 	"mpris": {
 		"interval": 1,
-		"format": "{player_icon} <i>{dynamic}</i>",
+		"format": " {player_icon} <i>{dynamic}</i>",
 		"format-paused": "{status_icon} <i>{dynamic}</i>",
 		"on-click": "playerctl play-pause",
 		"player-icons": {
@@ -535,7 +539,7 @@
 			"stopped": " ",
 		},
 		// "ignored-players": ["firefox"]
-		"max-length": 30,
+		"max-length": 27,
 	},
 	"network1": {
 		"format": "{ifname}",
@@ -818,7 +822,13 @@
 		"interval": "once",
 		"tooltip": false
 	},
-	// Modules below are for vertical layout
+	"1:web": "",
+	"2:code": "",
+	"3:term": "",
+	"4:work": "",
+	"5:music": "",
+	"6:docs": "",
+	"urgent": "", // Modules below are for vertical layout
 	"backlight#vertical": {
 		"interval": 2,
 		"align": 0.35,

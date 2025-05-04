@@ -1,6 +1,6 @@
 * {
 	font-family: "Liberation Mono Font", sans-serif;
-	font-size: 17px;
+	font-size: 19px;
 	border-radius: 0px;
 }
 
@@ -14,13 +14,18 @@
 	color: gray;
 	background: transparent;
 	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 	color: #7c7d93;
+	background-color: #070603;
 }
 
 #workspaces button.active {
 	color: white;
 
 	background: #463528;
+	color: #070603;
+	font-weight: bold;
 }
 
 #network {
@@ -34,11 +39,13 @@
 	margin-right: 3px;
 	margin-left: 3px;
 	color: #7c7d93;
+	background-color: #070603;
 }
 
 #tray {
 	font-size: 21px;
 	color: #7c7d93;
+	background-color: #070603;
 }
 
 #custom-logo {
@@ -51,17 +58,61 @@
 #custom-playerctl {
 	color: #c4ad76;
 	font-size: 17px;
+	background-color: #070603;
 }
 
 #mpris {
 	color: #7c7d93;
+	background-color: #070603;
 }
 
 #clock {
 	font-size: 17px;
+	background-color: #070603;
 }
 
 #window {
-	margin-left: 30px;
+	margin-left: 4px;
+	color: white;
+}
+
+window#waybar {
+	background: #16130b;
 	color: #7c7d93;
+}
+
+#custom-dwm {
+	background-color: #070603;
+
+	color: #7c7d93;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+#custom-weather {
+	background-color: #070603;
+}
+
+#tray {
+	background-color: #070603;
+}
+
+#custom-updates {
+	background-color: #070603;
+}
+
+#temperature {
+	background-color: #070603;
+}
+
+#custom-separator#dot-line {
+	background-color: #070603;
+}
+
+#disk {
+	background-color: #070603;
+}
+
+.modules-right {
+	background-color: #070603;
 }

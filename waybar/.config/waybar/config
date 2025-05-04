@@ -4,7 +4,7 @@
 //"mode": "dock",
 "exclusive": true,
 "passthrough": false,
-"position": "bottom",
+"position": "top",
 "spacing": 3,
 "fixed-center": true,
 "ipc": true,
@@ -13,13 +13,20 @@
 "margin-right": 0,
 
 
+
 "modules-left": [
 	
 	//"custom/logo",
 	//"hyprland/workspaces#pacman",
-	//"hyprland/workspaces#rw"
-	"hyprland/workspaces#kanjy"
-	//"hyprland/window",
+	//"hyprland/workspaces#rw",
+	//"hyprland/workspaces#vidan",
+	"hyprland/workspaces#kanjy",
+	//"hyprland/window"
+
+//"hyprland/workspaces#roman",
+"hyprland/submap", 
+"custom/dwm", 
+"hyprland/window"
 
 	
 	
@@ -58,16 +65,14 @@
 	
 
 	
-	"custom/separator#dot-line",
 
 	"clock",
-	"custom/separator#blank_3"
 	
 	
 	],
 	
 "custom/weather": {
-    "format": "{} ",
+    "format": " {} ",
     "exec": "~/.config/waybar/scripts/weather.sh",
     "interval": 600, // 10 minuta
     "return-type": "text",
@@ -76,7 +81,7 @@
 
 
     "custom/updates": {
-    "format": "{}{icon}",
+    "format": "{}{icon} ",
     "return-type": "json",
     "format-icons": {
         "has-updates": "  ",
