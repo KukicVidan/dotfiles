@@ -1,4 +1,5 @@
 
+@import "~/.cache/wal/colors-rofi-dark.rasi"
 /* ==========================================================================
    Rofi color theme
 
@@ -12,52 +13,8 @@
    Modified: Mon Feb 12 2018 04:08:43 PST -0800
    ========================================================================== */
 
-* {
-    /* Theme settings */
-    highlight:  italic;
-    scrollbar: true;
 
-    /* Gruvbox dark colors */
-    gruvbox-dark-bg0:          #16130b;
-    gruvbox-dark-bg0-soft:     #16130b;
-    gruvbox-dark-bg3:          #665c54;
-    gruvbox-dark-fg0:          #fbf1c7;
-    gruvbox-dark-fg1:          #7c7d93;
-    gruvbox-dark-red-dark:     #cc241d;
-    gruvbox-dark-red-light:    #fb4934;
-    gruvbox-dark-yellow-dark:  #d79921;
-    gruvbox-dark-yellow-light: #fabd2f;
-    gruvbox-dark-gray:         #a89984;
 
-    /* Theme colors */
-    background:                  @gruvbox-dark-bg0;
-    background-color:            @background;
-    foreground:                  @gruvbox-dark-fg1;
-    border-color:                @gruvbox-dark-gray;
-    separatorcolor:              @border-color;
-    scrollbar-handle:            @border-color;
-
-    normal-background:           @background;
-    normal-foreground:           @foreground;
-    alternate-normal-background: @gruvbox-dark-bg0-soft;
-    alternate-normal-foreground: @foreground;
-    selected-normal-background:  @gruvbox-dark-bg3;
-    selected-normal-foreground:  @gruvbox-dark-fg0;
-
-    active-background:           @gruvbox-dark-yellow-dark;
-    active-foreground:           @background;
-    alternate-active-background: @active-background;
-    alternate-active-foreground: @active-foreground;
-    selected-active-background:  @gruvbox-dark-yellow-light;
-    selected-active-foreground:  @active-foreground;
-
-    urgent-background:           @gruvbox-dark-red-dark;
-    urgent-foreground:           @background;
-    alternate-urgent-background: @urgent-background;
-    alternate-urgent-foreground: @urgent-foreground;
-    selected-urgent-background:  @gruvbox-dark-red-light;
-    selected-urgent-foreground:  @urgent-foreground;
-}
 
 /* ---- Window ---- */
 window {
@@ -74,7 +31,7 @@ listview {
 listview {
     fixed-height: 0;
     border:       0px 0px 0px ; /* ----ako zelim border i ispod koje boje da bude.----- */
-    border-color: @gruvbox-dark-fg0;
+    border-color: @foreground;
     spacing:      0px ; /*--spacing izmedju itema u listi--*/
     scrollbar:    false;
     padding:      0px 0px 0px ;
@@ -92,7 +49,7 @@ inputbar {
     prompt: ""; /* Removes 'drun:' */
     placeholder: '';
     children:[textbox-prompt-colon,entry,case-indicator];
-    background-color:   #16130b;
+    background-color:   @background;
 
     
 }
@@ -102,7 +59,7 @@ element-text{
 }
 entry {
     placeholder: ""; /* Removes 'Type to filter' */
-    background-color: #16130b;
+    background-color: @background;
     padding: 0px;
     margin: 0px;
 }
