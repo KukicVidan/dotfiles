@@ -198,10 +198,10 @@ require("lazy").setup({
 
 			-- Custom key mappings for scrolling
 			local keymap = {
-				["<C-Down>"] = function()
+				["<C-j>"] = function()
 					neoscroll.scroll(5, { duration = 70, move_cursor = false }) -- Scroll down without moving the cursor
 				end,                              -- Scroll down
-				["<C-Up>"] = function()
+				["<C-k>"] = function()
 					neoscroll.scroll(-5, { duration = 70, move_cursor = false }) -- Scroll up without moving the cursor
 				end,                              -- Scroll up
 			}
