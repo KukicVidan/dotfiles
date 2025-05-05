@@ -50,6 +50,7 @@ inputbar {
     placeholder: '';
     children:[textbox-prompt-colon,entry,case-indicator];
     background-color:   @background;
+    
 
     
 }

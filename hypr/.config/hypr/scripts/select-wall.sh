@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration variables
-WALLPAPER_DIR="$HOME/Pictures/wallpapers"
+WALLPAPER_DIR="$HOME/dotfiles/wallpapers/"
 SUPPORTED_FORMATS=("jpg" "jpeg" "png" "gif")
 MONITOR="DP-3"
 

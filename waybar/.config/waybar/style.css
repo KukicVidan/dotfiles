@@ -17,7 +17,7 @@
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
-	color: @foreground;
+	color: @color4;
 	background-color: @background;
 }
 
@@ -39,13 +39,13 @@
 	font-size: 17px;
 	margin-right: 3px;
 	margin-left: 3px;
-	color: @foreground;
+	color: @color4;
 	background-color: @background;
 }
 
 #tray {
 	font-size: 21px;
-	color: @foreground;
+	color: @color4;
 	background-color: @background;
 }
 
@@ -63,7 +63,7 @@
 }
 
 #mpris {
-	color: @foreground;
+	color: @color4;
 	background-color: @background;
 }
 
@@ -72,22 +72,16 @@
 	background-color: @background;
 }
 
-#window {
-	margin-left: 4px;
-	color: @color0;
-	font-weight: bold;
-}
-
 window#waybar {
 	background: @color1;
-	color: @foreground;
+	color: @color4;
 }
 
 #custom-dwm {
 	background-color: @background;
 
-	color: @foreground;
-	padding-left: 4px;
+	color: @color4;
+	padding-left: 11px;
 	padding-right: 4px;
 }
 
@@ -117,4 +111,10 @@ window#waybar {
 
 .modules-right {
 	background-color: @background;
+}
+
+#window {
+	margin-left: 4px;
+	color: @color0;
+	font-weight: normal;
 }
