@@ -21,7 +21,7 @@ done
 
 # Start swww-daemon if not running
 swww query || swww-daemon &
-sleep 1
+#sleep 1
 
 # Temporary file for storing selected image
 TEMP_FILE=$(mktemp)
