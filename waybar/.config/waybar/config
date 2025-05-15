@@ -28,25 +28,15 @@
 "custom/dwm", 
 "hyprland/window"
 
-	
-	
-	
-
-	
-        
-	
 	],
-"modules-center": [
-	
+"modules-center": [	
 		
-	],
+		  ],
 
 "modules-right": [
-
-	
 	
 	//"custom/playerctl",
-
+	"custom/news",
 	"disk",
 	"custom/weather",
 	"tray",
@@ -72,13 +62,20 @@
 	],
 	
 "custom/weather": {
-    "format": " {} ",
+    "format": "{} ",
     "exec": "~/.config/waybar/scripts/weather.sh",
     "interval": 600, // 10 minuta
     "return-type": "text",
     "tooltip": false
 },
-
+"custom/news": {
+	"format": "{}",
+	"exec": "~/dotfiles/waybar/.config/waybar/scripts/news.sh",
+	"interval": 30,
+	"tooltip": false,
+	"on-click": "kitty -e newsboat",
+	"on-click-middle": "~/.config/waybar/scripts/newsup.sh" // add newsup.sh to fetch news...i need to do this later...
+},
 
     "custom/updates": {
     "format": "{}{icon} ",

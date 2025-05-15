@@ -458,7 +458,7 @@
 		//"format": "󰋊",
 		"path": "/",
 		//"format-alt-click": "click",
-		"format": "   󱛟  {used}  ",
+		"format": " 󱛟  {used}  ",
 		//"tooltip": true,
 		"tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
 	},
