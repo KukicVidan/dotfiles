@@ -1,0 +1,251 @@
+@import url("file:///home/vidan/.cache/wal/colors.css");
+
+/* Title bar */
+.titlebar-buttonbox {
+	display: none !important;
+}
+
+.titlebar-spacer {
+	display: none !important;
+}
+
+/* Tab bar */
+#navigator-toolbox {
+	border: 0px !important;
+}
+
+#TabsToolbar {
+	margin-left: 20vw !important;
+	background-color: var(--color0) !important;
+	color: var(--foreground) !important;
+}
+
+/* Nav bar*/
+#nav-bar {
+	margin-right: 80vw !important;
+	margin-top: -36px !important;
+	margin-bottom: -5px;
+	background: var(--color1) !important;
+}
+
+/* URL bar */
+#back-button {
+	display: none !important;
+}
+
+#forward-button {
+	display: none !important;
+}
+
+#tracking-protection-icon-container {
+	display: none !important;
+}
+
+#urlbar-container {
+	width: auto !important;
+	background-color: var(--background) !important;
+}
+
+#urlbar {
+	background-color: var(--color2) !important;
+	color: var(--foreground) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.urlbarView-row[selected],
+.urlbarView-row:hover {
+	background-color: var(--color2) !important;
+
+	color: var(--foreground) !important;
+}
+
+#urlbar[breakout-extend] {
+	width: 100vw !important;
+	background-color: var(--background) !important;
+}
+
+#page-action-buttons {
+	display: none !important;
+}
+
+#PanelUI-button {
+	display: none !important;
+
+	background: transparent !important;
+}
+
+/* Active Tab */
+.tabbrowser-tab[selected="true"] {
+	background-color: var(--color2) !important;
+	color: var(--color0) !important;
+}
+
+/* Inactive Tabs */
+.tabbrowser-tab {
+	background-color: var(--color0) !important;
+	color: var(--color6) !important;
+}
+
+/* Hover Effect */
+.tabbrowser-tab:hover {
+	background-color: var(--color6) !important;
+	color: var(--color0) !important;
+}
+
+.tabbrowser-tab[selected="true"] .tab-background {
+	background-color: var(--color2) !important;
+	color: var(--color0) !important;
+}
+
+#urlbarView {
+	background-color: var(--background) !important;
+	/* Background of dropdown */
+	color: var(--foreground) !important;
+	/* Text color */
+	border: none !important;
+}
+
+.urlbarView-row {
+	background-color: var(--background) !important;
+	color: var(--foreground) !important;
+}
+
+/* Outer container of dropdown */
+#urlbar-results,
+#urlbarView {
+	background-color: var(--color0) !important;
+	color: var(--color4) !important;
+	border: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	box-shadow: none !important;
+}
+
+/* Fix grey gap inside */
+.urlbarView-body-inner {
+	background-color: var(--color0) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#urlbarView-footer,
+#urlbarView-buttons {
+	display: none;
+}
+
+#customizationui-widget-panel,
+.panel-arrowcontent {
+	background-color: var(--color0) !important;
+	color: var(--color6) !important;
+	border: 1px solid var(--color2) !important;
+	box-shadow: none !important;
+}
+
+.panel-header,
+.panel-subview-body {
+	background-color: var(--color0) !important;
+	color: var(--color4) !important;
+}
+
+toolbarbutton.subviewbutton {
+	background-color: transparent !important;
+	color: var(--color4) !important;
+}
+
+toolbarbutton.subviewbutton:hover {
+	background-color: var(--color1) !important;
+	color: var(--color7) !important;
+}
+
+#customizationui-widget-panel,
+.panel-viewstack,
+.panel-view,
+.panel-subview-body {
+	background-color: var(--color0) !important;
+	color: var(--color6) !important;
+}
+
+.panel-arrowcontent,
+.panel-arrowcontent::before,
+.panel-arrow {
+	background-color: var(--color0) !important;
+	border-color: var(--color2) !important;
+	box-shadow: none !important;
+}
+
+.panel-arrowcontent {
+	margin: 0 !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+}
+
+/* test */
+
+:root {
+	--urlbar-color: var(--color0);
+	/* background */
+	--urlbar-text: var(--color6);
+	/* text */
+	--urlbar-border: var(--color2);
+	/* border/shadow */
+}
+
+/* URL bar full container */
+#urlbar-background,
+#urlbar,
+#urlbar-input-container,
+#urlbar-container {
+	background-color: var(--urlbar-color) !important;
+	color: var(--urlbar-text) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Space between URL and extension icons */
+#nav-bar {
+	background-color: var(--urlbar-color) !important;
+}
+
+/* Autocomplete dropdown (the whole popup) */
+#urlbar-results,
+.urlbarView,
+.urlbarView-body,
+.urlbarView-row,
+.urlbarView-title,
+.urlbarView-url {
+	background-color: var(--urlbar-color) !important;
+	color: var(--urlbar-text) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Selected suggestion */
+.urlbarView-row[selected] {
+	background-color: var(--color1) !important;
+	color: var(--urlbar-text) !important;
+}
+
+/* Footer of URL dropdown */
+.urlbarView-footer,
+.urlbarView-row[type="search"] {
+	background-color: var(--urlbar-color) !important;
+	color: var(--urlbar-text) !important;
+	border-top: 1px solid var(--urlbar-border) !important;
+}
+
+/* Hover and selected row in URL bar dropdown */
+.urlbarView-row:hover,
+.urlbarView-row[selected] {
+	background-color: var(--color1) !important;
+	color: var(--urlbar-text) !important;
+}
+
+/* Global removal of border-radius for a flat look */
+* {
+	border-radius: 0 !important;
+	--toolbarbutton-border-radius: 0 !important;
+	--arrowpanel-menuitem-border-radius: 0 !important;
+	--autocomplete-popup-border-radius: 0 !important;
+	--tab-border-radius: 0 !important;
+}
