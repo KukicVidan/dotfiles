@@ -35,29 +35,23 @@
 
 "modules-right": [
 	
+	"tray",
+	"custom/separator#line",
 	//"custom/playerctl",
 	"custom/news",
+	"custom/separator#line",
 	"disk",
+	"custom/separator#line",
 	"custom/weather",
-	"tray",
-	
+	"custom/separator#line",
 	"custom/updates",
-
+	"custom/separator#line",
 	"temperature",
-	//"custom/separator#dot-line",
+	"custom/separator#line",
 	//"group/motherboard",
-	
-	
-	
-	
 	"mpris",
-	
-	
-
-	
-
+	"custom/separator#line",
 	"clock",
-	
 	
 	],
 	
