@@ -38,6 +38,12 @@ if [ -n "$SELECTED_IMG" ]; then
 	# Apply pywal colors
 	wal -i "$SELECTED_IMG"
 
+	# ---reload dunst colors ---
+	ln -sf ~/.cache/wal/dunstrc ~/.config/dunst/dunstrc
+	pkill dunst
+	dunst -config ~/.cache/wal/dunstrc &
+	# ---------------------------------------------
+
 	# Reload waybar to apply new colors
 	pkill waybar
 	waybar &

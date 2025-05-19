@@ -132,8 +132,6 @@ alias ls='lsd'
 waybar & disown' 
 
  alias disk='ncdu --color=dark'
- alias whatsapp='nchat'
-
 
 alias calendar='calcurse'
 alias hint="bat --color=always --style=plain --paging=never ~/dotfiles/HINTS/hints.md"
