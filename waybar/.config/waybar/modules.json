@@ -520,8 +520,8 @@
 	},
 	"mpris": {
 		"interval": 1,
-		"format": " {player_icon} <i>{dynamic}</i>",
-		"format-paused": "{status_icon} <i>{dynamic}</i>",
+		"format": "| {player_icon} <i>{dynamic}</i>",
+		"format-paused": "|  {status_icon} <i>{dynamic}</i>",
 		"on-click": "playerctl play-pause",
 		"player-icons": {
 			"chromium": " ",
