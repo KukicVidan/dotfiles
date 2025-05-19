@@ -47,9 +47,13 @@
 	"custom/separator#line",
 	"custom/updates",
 	"custom/separator#line",
+	"custom/mail",
+
+	"custom/separator#line",
 	"temperature",
 	//"group/motherboard",
 	"mpris",
+
 	"custom/separator#line",
 	"clock",
 	
@@ -62,13 +66,24 @@
     "return-type": "text",
     "tooltip": false
 },
+
+
 "custom/news": {
 	"format": "{}",
 	"exec": "~/dotfiles/waybar/.config/waybar/scripts/news.sh",
-	"interval": 30,
-	"tooltip": false,
+	"interval": 3600, // 1 hour
 	"on-click": "kitty -e newsboat",
-	"on-click-middle": "~/.config/waybar/scripts/newsup.sh" // add newsup.sh to fetch news...i need to do this later...
+	"on-click-middle": "~/dotfiles/waybar/.config/waybar/scripts/news.sh click"
+},
+
+
+"custom/mail": {
+    "exec": "~/dotfiles/waybar/.config/waybar/scripts/mail.sh",
+    "interval": 3600,
+    "tooltip": false,
+    "format": "{}",
+    "on-click": "kitty -e neomutt",
+    "on-click-middle": "~/dotfiles/waybar/.config/waybar/scripts/mailSync.sh"
 },
 
 "custom/kb_layout": {
