@@ -9,5 +9,5 @@ if [ "$unread" -gt 0 ]; then
 	echo "  $unread "
 
 else
-	echo "   Email "
+	echo "  "
 fi
