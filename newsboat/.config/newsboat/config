@@ -68,5 +68,4 @@ feedlist-format "%?T?║%4i %n %8u (%T) %t &╠═══════════
 macro v set browser "mpv --no-config %u" ; open-in-browser ; set browser "elinks %u"
 
 
-macro 0 set browser "firefox --kiosk"
 
