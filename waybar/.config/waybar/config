@@ -36,6 +36,7 @@
 "modules-right": [
 	
 	"tray",
+  	"custom/kb_layout",
 	"custom/separator#line",
 	//"custom/playerctl",
 	"custom/news",
@@ -70,13 +71,19 @@
 	"on-click-middle": "~/.config/waybar/scripts/newsup.sh" // add newsup.sh to fetch news...i need to do this later...
 },
 
-    "custom/updates": {
-    "format": "{}{icon} ",
-    "return-type": "json",
-    "format-icons": {
-        "has-updates": "  ",
-        "updated": "  "
-    },
+"custom/kb_layout": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/keyboardLayout.sh",
+    "interval": 1
+},
+
+"custom/updates": {
+"format": "{}{icon} ",
+"return-type": "json",
+"format-icons": {
+"has-updates": "  ",
+"updated": "  "
+},
 
  "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"
