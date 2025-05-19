@@ -41,6 +41,8 @@
 	//"custom/playerctl",
 	"custom/news",
 	"custom/separator#line",
+	"memory",
+	"custom/separator#line",
 	"disk",
 	"custom/separator#line",
 	"custom/weather",
