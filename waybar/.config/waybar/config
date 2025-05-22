@@ -54,8 +54,8 @@
 	"custom/separator#line",
 	"temperature",
 	//"group/motherboard",
-	"mpris",
-
+	//"mpris",
+	"mpd",
 	"custom/separator#line",
 	"clock",
 	
@@ -102,6 +102,23 @@
 "updated": "  "
 },
 
+ "mpd": {
+    "format": "{stateIcon} {artist} - {title}",
+    "format-stopped": "⏹",
+    "format-paused": "⏸ {artist} - {title}",
+    "format-playing": "▶ {artist} - {title}",
+    "interval": 1,
+    "max-length": 50,
+    "on-click": "mpc toggle",
+    "on-scroll-up": "mpc next",
+    "on-scroll-down": "mpc prev",
+    "state-icons": {
+      "paused": "⏸",
+      "playing": "▶",
+      "stopped": "⏹"
+    },
+    "tooltip-format": "MPD\n{album}\n{file}"
+  },
 
 
 

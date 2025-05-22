@@ -21,12 +21,13 @@
 > `SHIFT+K` ---> to see Documentation
 > `C-w, w` ---> to open popup window in NVIM
 
-# Boostable USB
+# Bootable USB
 
 > `sudo woeusb --target-filesystem NTFS --device ~/Downloads/Windows11.iso /dev/sda`
 
 > `lsusb` ---> list usb devices
 > `lsblk` ---> list storage devices
+> `sudo umount /dev/sd(?)` ---> unmount if auto mounted
 
 # Download audio from yt
 
