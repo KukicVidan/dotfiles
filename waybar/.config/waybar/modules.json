@@ -532,7 +532,7 @@
 			"vlc": "󰕼 "
 		},
 		"status-icons": {
-			"paused": "󰐎 ",
+			"paused": "󰏤 ",
 			"playing": " ",
 			"stopped": " ",
 		},
@@ -739,11 +739,11 @@
 		"exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} ~ {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
 		"on-click-middle": "playerctl play-pause",
 		"on-click": "playerctl previous",
-		"on-click-right": "layerctl next",
+		"on-click-right": "playerctl next",
 		"scroll-step": 5.0,
 		"on-scroll-up": "~/.config/hypr/scripts/Volume.sh --inc",
 		"on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
-		"smooth-scrolling-threshold": 1,
+		"smooth-scrolling-threshold": 1
 	},
 	"custom/logo": {
 		"exec": "echo ' 󰣇 '",
