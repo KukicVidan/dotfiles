@@ -1,11 +1,12 @@
 
+include ~/.cache/wal/colors-kitty.conf
 ##############ttf-terminus-nerd ###########
 # font_family  Terminus Font Nerd
 # bold_font Terminus Font Nerd, Bold
 # italic_font Terminus Font Nerd, Light
 ######################################
 
-
+font_size 22
 
 ######DEJAVU SANS MONO
 # font_family DejaVu Sans Mono
@@ -22,7 +23,7 @@
 # bold_font        Liberation Mono Font, Bold
 # italic_font      Liberation Mono Font, Light
 # bold_italic_font auto
-font_size 18
+
 
 # vim:ft=kitty
 
@@ -35,84 +36,86 @@ font_size 18
 
 
 
-# The basic colors
-foreground            #eae1d4
-background            #16130b
-selection_foreground  #392f15
-selection_background  #d6c5a0
-background_opacity 0.9
+# The basic colors #16130+b
 
-# Cursor colors
-cursor                  #f5e0dc
-cursor_text_color       #1e1e2e
+# foreground            @foreground;
+# background            @background;
+# selection_foreground  @color1;
+# selection_background  @color2;
+# background_opacity 0.9
 
-# URL underline color when hovering with mouse
-url_color               #f5e0dc
+# # Cursor colors
+# cursor                  @color14;
+# cursor_text_color       @color14;
 
-# Kitty window border colors
-active_border_color     #16130b
-inactive_border_color   #392f15
-bell_border_color       #f9e2af
+# # URL underline color when hovering with mouse
+# url_color               #f5e0dc
 
-# OS Window titlebar colors
-wayland_titlebar_color system
-macos_titlebar_color system
+# # Kitty window border colors
+# active_border_color     #16130b
+# inactive_border_color   #392f15
+# bell_border_color       #f9e2af
 
-# Tab bar colors
-active_tab_foreground   #f9e2af
-active_tab_background   #16130b
-inactive_tab_foreground #f9e2af
-inactive_tab_background #392f15
+# # OS Window titlebar colors
+# wayland_titlebar_color system
+# macos_titlebar_color system
 
-# Colors for marks (marked text in the terminal)
-mark1_foreground #1e1e2e
-mark1_background #b4befe
-mark2_foreground #1e1e2e
-mark2_background #cba6f7
-mark3_foreground #1e1e2e
-mark3_background #74c7ec
+# # Tab bar colors
+# active_tab_foreground   #f9e2af
+# active_tab_background   #16130b
+# inactive_tab_foreground #f9e2af
+# inactive_tab_background #392f15
 
-# The 16 terminal colors
-# Gruvbox Color Scheme for Kitty
+# # Colors for marks (marked text in the terminal)
+# mark1_foreground #1e1e2e
+# mark1_background #b4befe
+# mark2_foreground #1e1e2e
+# mark2_background #cba6f7
+# mark3_foreground #1e1e2e
+# mark3_background #74c7ec
 
-# Background and Foreground
-background #16130b
-foreground #ebdbb2
+# # The 16 terminal colors
+# # Gruvbox Color Scheme for Kitty
 
-# Black
-color0 #1d2021
-color8 #7c6f64
+# # Background and Foreground
+# background #16130b
+# foreground #ebdbb2
 
-# Red
-color1 #fb4934
-color9 #fb4934
+# # Black
+# color0 #1d2021
+# color8 #7c6f64
 
-# Green
-color2 #b8bb26
-color10 #b8bb26
+# # Red
+# color1 #fb4934
+# color9 #fb4934
 
-# Yellow
-color3 #fabd2f
-color11 #fabd2f
+# # Green
+# color2 #b8bb26
+# color10 #b8bb26
 
-# Blue
-color4 #83a598
-color12 #83a598
+# # Yellow
+# color3 #fabd2f
+# color11 #fabd2f
 
-# Purple
-color5 #d3869b
-color13 #d3869b
+# # Blue
+# color4 #83a598
+# color12 #83a598
 
-# Cyan
-color6 #8ec07c
-color14 #8ec07c
+# # Purple
+# color5 #d3869b
+# color13 #d3869b
 
-# White
-color7 #ebdbb2
-color15 #ebdbb2
+# # Cyan
+# color6 #8ec07c
+# color14 #8ec07c
+
+# # White
+# color7 #ebdbb2
+# color15 #ebdbb2
 
 hide_window_decorations yes
-window_padding_width 25
+#window_padding_width 10
+
 enable_graphics yes
 
 allow_remote_control yes
@@ -134,27 +137,31 @@ map alt+10                   goto_tab 10
 
 map ctrl+w                   close_tab
 
-tab_bar_edge                      top
- tab_bar_margin_width 0.0
-tab_bar_style                       separator
-tab_separator ""
+
+
+
+tab_bar_edge                      bottom
+tab_bar_margin_height      0 7.5 
+tab_bar_style                      separator
+tab_separator "|"
 tab_bar_align                       left
-tab_title_max_length          20
-
-
+tab_title_max_length          15
 
 tab_title_template              "{index} {title[title.rfind('/')+1:]}"
 active_tab_title_template  "{index} {title[title.rfind('/')+1:]}"
-
 active_tab_font_style         normal
 
-tab_bar_background           #16130b
-inactive_tab_background      #16130b
-inactive_tab_foreground      #665c54
 
-active_tab_background         #16130b
 
-active_tab_foreground        #d4ddea
+
+# tab_bar_background           #16130b
+# inactive_tab_background      #16130b
+# inactive_tab_foreground      #665c54
+
+# active_tab_background         #16130b
+
+# active_tab_foreground         #7c7d93
+
 
 
 
@@ -163,8 +170,11 @@ send_alt_esc yes
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="FreeMono"
-bold_font        auto
+font_family      family="Liberation Mono"
+bold_font        normal
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
+
+
+allow_bold_font no
