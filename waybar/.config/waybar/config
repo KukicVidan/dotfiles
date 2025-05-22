@@ -50,12 +50,12 @@
 	"custom/updates",
 	"custom/separator#line",
 	"custom/mail",
-
 	"custom/separator#line",
 	"temperature",
 	//"group/motherboard",
 	//"mpris",
-	"mpd",
+	"custom/mpd",
+	"custom/test",
 	"custom/separator#line",
 	"clock",
 	
@@ -102,29 +102,21 @@
 "updated": "  "
 },
 
- "mpd": {
-    "format": "{stateIcon} {artist} - {title}",
-    "format-stopped": "⏹",
-    "format-paused": "⏸ {artist} - {title}",
-    "format-playing": "▶ {artist} - {title}",
-    "interval": 1,
-    "max-length": 50,
-    "on-click": "mpc toggle",
-    "on-scroll-up": "mpc next",
-    "on-scroll-down": "mpc prev",
-    "state-icons": {
-      "paused": "⏸",
-      "playing": "▶",
-      "stopped": "⏹"
-    },
-    "tooltip-format": "MPD\n{album}\n{file}"
-  },
-
-
-
-
+ 
  "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"
-}
+},
+
+
+
+"custom/mpd": {
+  "exec": "/home/vidan/dotfiles/waybar/.config/waybar/scripts/mpd_status.sh",
+  "interval": 2,
+  "return-type": "json",
+  "format": "{text}"
+},
+
+
+
 
 }
