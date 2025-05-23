@@ -190,3 +190,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu select=2
 
 export LS_COLORS='di=34:ln=36:so=32:pi=33:ex=31:bd=33:cd=33:su=37:sg=37:tw=30:ow=34'
+
+
+
+bindkey -v

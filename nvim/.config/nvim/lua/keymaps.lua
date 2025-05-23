@@ -33,3 +33,6 @@ vim.api.nvim_set_keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>", {
 -- Move lines with Alt+Arrow keys
 vim.keymap.set('n', '<M-j>', ':m .+1<CR>==', { noremap = true })
 vim.keymap.set('n', '<M-k>', ':m .-2<CR>==', { noremap = true })
+
+
+vim.api.nvim_set_keymap('n', '<leader>q', 'ysiW', { noremap = false })
