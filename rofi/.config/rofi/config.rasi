@@ -38,7 +38,7 @@ listview {
 }
 
 element-text {
-  font: "Liberation Mono 12";
+  font: "Terminess Nerd Font Mono";
   
 }
 
