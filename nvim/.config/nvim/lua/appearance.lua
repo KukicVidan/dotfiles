@@ -9,7 +9,7 @@ vim.api.nvim_set_hl(0, 'NvimTreeNormalNC', { bg = '#000000' })
 require('lualine').setup {
 	options = {
 		--theme = 'codedark',
-		theme = 'jellybeans',
+		theme = 'pywal',
 		component_separators = { left = '|', right = '|' },
 		section_separators = { left = '', right = '' },
 		disabled_filetypes = {
