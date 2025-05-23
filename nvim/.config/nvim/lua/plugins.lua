@@ -28,7 +28,7 @@ require("lazy").setup({
 		"luisiacc/gruvbox-baby",
 		config = function()
 			vim.g.gruvbox_baby_color_overrides = {
-				background = "#070603", -- Replace with your desired HEX color
+				background = "#000000", -- Replace with your desired HEX color
 			}
 			vim.g.gruvbox_baby_background_color = "dark"
 			vim.cmd("colorscheme gruvbox-baby")

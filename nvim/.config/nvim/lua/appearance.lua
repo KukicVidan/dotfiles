@@ -2,9 +2,9 @@
 vim.cmd("colorscheme gruvbox-baby")
 
 -- Set Nvim Tree background color
-vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = '#070603' })
+vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = '#000000' }) --#070603 old color
 -- Set Nvim Tree background color
-vim.api.nvim_set_hl(0, 'NvimTreeNormalNC', { bg = '#070603' })
+vim.api.nvim_set_hl(0, 'NvimTreeNormalNC', { bg = '#000000' })
 
 require('lualine').setup {
 	options = {
