@@ -193,4 +193,12 @@ export LS_COLORS='di=34:ln=36:so=32:pi=33:ex=31:bd=33:cd=33:su=37:sg=37:tw=30:ow
 
 
 
+# Load pywal colors
+[ -f "${HOME}/.cache/wal/colors.sh" ] && source "${HOME}/.cache/wal/colors.sh"
+
+# Set dynamic FZF theme
+export FZF_DEFAULT_OPTS="
+  --color=fg:$foreground,bg:$background,hl:$color4 \
+  --color=fg+:$foreground,bg+:$color0,hl+:$color4 \
+  --color=info:$color2,prompt:$color5,pointer:$color1,marker:$color3,spinner:$color4,header:$color6"
 
