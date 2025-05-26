@@ -1,5 +1,8 @@
 # dotfiles
 my arch+hyprland dotfiles
+video demo:
+https://youtu.be/dMIczyk5mZE?si=2NKhG7r323x6d2OU
+
 ![374183906-36e08f37-e90f-4b6b-8d5b-a4c4aeedf4f8](https://github.com/user-attachments/assets/db79fddd-1c53-4c95-a7cd-f4baad818fd8)
 ![screenshot-2025-04-07_01-16-48](https://github.com/user-attachments/assets/db2c039a-9a80-4743-a122-0a587dc58e77)
 ![screenshot-2025-04-07_01-16-55](https://github.com/user-attachments/assets/24fd3626-cbbb-417d-b25e-2902abb0c663)
