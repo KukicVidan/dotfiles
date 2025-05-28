@@ -1,120 +1,120 @@
 @import url("file:///home/vidan/.cache/wal/colors-waybar.css");
 
 * {
-	font-family: "Liberation Nerd Font", sans-serif;
-	font-size: 20px;
-	border-radius: 0px;
+  font-family: "Liberation Nerd Font", sans-serif;
+  font-size: 20px;
+  border-radius: 0px;
 }
 
 #waybar {
-	background: @background;
-	color: @foreground;
-	border: none;
+  background: @background;
+  color: @foreground;
+  border: none;
 }
 
 #workspaces button {
-	background: transparent;
-	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-	color: @color4;
-	background-color: @background;
+  background: transparent;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: @color4;
+  background-color: @background;
 }
 
 #workspaces button.active {
-	color: @background;
+  color: @background;
 
-	background: @color1;
+  background: @color1;
 
-	font-weight: bold;
+  font-weight: bold;
 }
 
 #network {
-	margin-right: 10px;
-	margin-left: 15px;
+  margin-right: 10px;
+  margin-left: 15px;
 }
 
 #custom-updates {
-	background-color: transparent;
-	font-size: 17px;
-	margin-right: 3px;
-	margin-left: 3px;
-	color: @color4;
-	background-color: @background;
+  background-color: transparent;
+  font-size: 17px;
+  margin-right: 3px;
+  margin-left: 3px;
+  color: @color4;
+  background-color: @background;
 }
 
 #tray {
-	font-size: 21px;
-	color: @color4;
-	background-color: @background;
+  font-size: 21px;
+  color: @color4;
+  background-color: @background;
 }
 
 #custom-logo {
-	color: @color2;
+  color: @color2;
 
-	font-size: 25px;
-	padding-right: 7px;
+  font-size: 25px;
+  padding-right: 7px;
 }
 
 #custom-playerctl {
-	color: #c4ad76;
-	font-size: 17px;
-	background-color: @background;
+  color: #c4ad76;
+  font-size: 17px;
+  background-color: @background;
 }
 
 #mpris {
-	color: @color4;
-	background-color: @background;
+  color: @color4;
+  background-color: @background;
 }
 
-#clock {
-	font-size: 17px;
-	background-color: @background;
-}
+/* #clock { */
+/* 	font-size: 17px; */
+/* 	background-color: @background; */
+/* } */
 
 window#waybar {
-	background: @color1;
-	color: @color4;
+  background: @color1;
+  color: @color4;
 }
 
 #custom-dwm {
-	background-color: @background;
+  background-color: @background;
 
-	color: @color4;
-	padding-left: 11px;
-	padding-right: 4px;
+  color: @color4;
+  padding-left: 11px;
+  padding-right: 4px;
 }
 
 #custom-weather {
-	background-color: @background;
+  background-color: @background;
 }
 
 #tray {
-	background-color: @background;
+  background-color: @background;
 }
 
 #custom-updates {
-	background-color: @background;
+  background-color: @background;
 }
 
 #temperature {
-	background-color: @background;
+  background-color: @background;
 }
 
 #custom-separator#dot-line {
-	background-color: @background;
+  background-color: @background;
 }
 
 #disk {
-	background-color: @background;
+  background-color: @background;
 }
 
 .modules-right {
-	background-color: @background;
+  background-color: @background;
 }
 
 #window {
-	margin-left: 4px;
-	color: @color0;
-	font-weight: normal;
+  margin-left: 4px;
+  color: @color0;
+  font-weight: normal;
 }
