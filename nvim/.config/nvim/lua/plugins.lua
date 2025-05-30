@@ -69,7 +69,7 @@ require("lazy").setup({
 		"akinsho/toggleterm.nvim",
 		version = "*",
 		opts = {
-			open_mapping = [[`]], -- Set backtick (`) to toggle the terminal
+			open_mapping = [[<C-`>]], -- Set backtick (`) to toggle the terminal
 			direction = "horizontal", -- Set the terminal at the bottom
 			shell = "/bin/zsh", -- Set the terminal to use Zsh
 			size = 20, -- Set terminal size (can adjust as needed)
