@@ -6,7 +6,7 @@
   "cmp-path": { "branch": "main", "commit": "c6635aae33a50d6010bf1aa756ac2398a2d54c32" },
   "dashboard-nvim": { "branch": "master", "commit": "0f99b3cd66b9fde13926724c67c6e1abeb48e07d" },
   "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
-  "fzf-lua": { "branch": "main", "commit": "758173f499d15410ecb50c5519a41b27c33e645d" },
+  "fzf-lua": { "branch": "main", "commit": "29e982dfc96a134fecc80853c8cb8324e43e574b" },
   "gen.nvim": { "branch": "main", "commit": "c8e1f574d4a3a839dde73a87bdc319a62ee1e559" },
   "gruvbox-baby": { "branch": "main", "commit": "bd52e62d8134647090108189e69c8b3cd18bdbbf" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
