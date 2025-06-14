@@ -10,6 +10,10 @@
 
 > `cht.sh  [INFO]`---> best TLDR and MAN in one
 
+> `fusermount -u ~/MyServer` --> unmount server files
+
+> `sshfs username@server_ip:/path/of/the/servers/ ~/where/in/myLocalMachine`
+
 # Nvim:
 
 > `s/SelectWhatToChange/ChangingSelectedInto?/g` ---> Will replace selected word
