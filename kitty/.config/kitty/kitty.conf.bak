@@ -170,7 +170,7 @@ send_alt_esc yes
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="Terminess Nerd Font"
+font_family      family='Terminess Nerd Font' postscript_name=TerminessNF
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
