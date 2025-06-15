@@ -14,6 +14,8 @@
 
 > `sshfs username@server_ip:/path/of/the/servers/ ~/where/in/myLocalMachine`
 
+> `df -h` --> shows disk info
+
 # Nvim:
 
 > `s/SelectWhatToChange/ChangingSelectedInto?/g` ---> Will replace selected word
